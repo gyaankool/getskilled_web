@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetSkilled - Custom Course</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">Get<span>Skilled</span></div>
+
+        <div class="hamburger" >
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="../AboutUs/index.html">About</a>
+
+            <div class="dropdown dropdown-small">
+                <a href="#" class="dropdown-toggle">
+                    Programs <i class=""><img src="assets/Vector.svg" alt=""></i>
+                </a>
+
+                <div class="dropdown-content">
+                    <a href="../AllPrograms/technology.html">Technology</a>
+                    <a href="../AllPrograms/engineering.html">Engineering</a>
+                    <a href="../AllPrograms/commerce.html">Commerce</a>
+                    <a href="../AllPrograms/arts.html">Arts</a>
+                </div>
+            </div>
+
+            <a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a>
+            <a href="../community/index.html">Community <span class="exclusive">Exclusive</span></a>
+
+            <div class="dropdown">
+
+                <a href="#" class="dropdown-toggle dropdown-large">
+                    More <i class=""><img src="assets/Vector.svg" alt=""></i></a>
+
+                <div class="dropdown-content">
+                    <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                    <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                    <a href="../AI course creator/index.html">AI Course Generator</a>
+                    <a href="../aibookgpt/index.html">AI Book GPT</a>
+                </div>
+            </div>
+
+            <a href="#footer">Contact</a>
+        </nav>
+        <a href="../loginandregister/signup.html">
+            <button class="signup-btn">Sign Up</button>
+        </a>
+    </div>
+</header>
+<!-- Mobile Header -->
+<div class="mobile-header">
+    <div class="logo">Get<span>Skilled</span></div>
+    <div class="mobile-hamburger" onclick="toggleMobileMenu()">☰</div>
+</div>
+
+<nav class="mobile-nav" id="mobileNav">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../AboutUs/index.html">About</a></li>
+        <li class="mobile-dropdown">
+            <a href="#" onclick="toggleMobileDropdown(event, 'mobilePrograms')">Programs ▾</a>
+            <div class="mobile-dropdown-content" id="mobilePrograms">
+                <a href="../AllPrograms/technology.html">Technology</a>
+                <a href="../AllPrograms/engineering.html">Engineering</a>
+                <a href="../AllPrograms/commerce.html">Commerce</a>
+                <a href="../AllPrograms/arts.html">Arts</a>
+            </div>
+        </li>
+        <li><a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a></li>
+        <li><a href="../community/index.html">Community</a> <span class="mobile-premium">Premium</span></li>
+        <li class="mobile-dropdown">
+            <a href="#" onclick="toggleMobileDropdown(event, 'mobileMore')">More ▾</a>
+            <div class="mobile-dropdown-content" id="mobileMore">
+                <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                <a href="../AI course creator/index.html">AI Course Creator</a>
+                <a href="../aibookgpt/index.html">AI Book GPT</a>
+            </div>
+        </li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+
+  
+  <section class="custom-course-container">
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-text">
+        <h2><span>Get</span>Skilled</h2>
+        <h3>Your Learning, Your Way!</h3>
+        <p>Answer a few quick questions, and our AI will craft a step-by-step course with the best resources tailored to
+          your learning needs!</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/learning_illustartion.svg" alt="Learning Illustration" />
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="custom-course-form">
+      <div class="left-section">
+        <p class="badge">JUST A FEW QUESTIONS →</p>
+
+        <label for="learning-goal">What do you want to learn?</label>
+        <input type="text" id="goal" placeholder="Example: I want to learn Data Analytics">
+
+        <label for="relevant-topics">What topics are most relevant to your learning?</label>
+        <input type="text" id="topics" placeholder="Example: Data Analytics">
+
+        <button class="create-course-btn">Create Custom Course →</button>
+      </div>
+
+      <div class="right-section">
+        <p>Where do you see yourself right now?</p>
+
+        <div class="level-option ">
+          <input type="radio" name="level" checked>
+          <div>
+            <strong>Beginner</strong>
+            <p>I’m just starting & need the basics</p>
+          </div>
+        </div>
+
+        <div class="level-option">
+          <input type="radio" name="level">
+          <div>
+            <strong>Intermediate</strong>
+            <p>I know some concepts and want to go deeper</p>
+          </div>
+        </div>
+
+        <div class="level-option">
+          <input type="radio" name="level">
+          <div>
+            <strong>Advanced</strong>
+            <p>I’m experienced and looking for master</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Loader Overlay -->
+  <div id="loader-overlay" class="hidden">
+    <div class="loader-container">
+
+      <div class="loader "></div>
+
+      <h2>Your customized book is on its way!</h2>
+      <p>
+        We’re curating top PDFs, videos, and guides into a customized book PDF to make learning seamless for you. <br>
+        Just a few more seconds!
+      </p>
+    </div>
+  </div>
+  <!-- NEXT SECTION: Hidden initially -->
+  <section id="course-section">
+
+    <div class="course-box">
+      <p class="badge">Your Custom Course →</p>
+      <div class="course-header">
+        <span>Machine Learning</span>
+        <span>5 Topics · 30 PDFs · 20 Videos</span>
+      </div>
+
+      <!-- Topic 1 -->
+      <div class="bar">
+        <div class="topic" onclick="togglePanel(this)">
+          <span>Introduction to Data Analytics & Fundamentals</span>
+          <span>
+            <span style="color: green;">3 PDFs</span> ·
+            <span style="color: green;">4 Videos</span>
+            <span class="arrow"><img src="assets/Vector.svg" alt=""></span>
+          </span>
+        </div>
+        <div class="content-panel">
+          <div class="tabs">
+            <div class="tab active" onclick="switchTab(event, 'videos')">Videos</div>
+            <div class="tab" onclick="switchTab(event, 'pdfs')">PDF's</div>
+          </div>
+
+          <div class="videos active">
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/2z5E7oQfD7k" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">The Beginner's Guide to Data Analytics</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/9sH6Vz_-GjU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">Understanding Data Types and Sources</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/uyhzZLw4fWU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">How Businesses Use Data Analytics for Growth</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+          </div>
+
+          <div class="pdfs">
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>What is Data Analytics? A Beginner's Overview <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>The Data Analytics Process Explained Step by Step <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>How to Think Like a Data Analyst <span>40 MB</span></p>
+            </div>
+            <button class="download-all">Download All ⬇️</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bar">
+        <div class="topic" onclick="togglePanel(this)">
+          <span>Introduction to Data Analytics & Fundamentals</span>
+          <span>
+            <span style="color: green;">3 PDFs</span> ·
+            <span style="color: green;">4 Videos</span>
+            <span class="arrow"><img src="assets/Vector.svg" alt=""></span>
+          </span>
+        </div>
+        <div class="content-panel">
+          <div class="tabs">
+            <div class="tab active" onclick="switchTab(event, 'videos')">Videos</div>
+            <div class="tab" onclick="switchTab(event, 'pdfs')">PDF's</div>
+          </div>
+
+          <div class="videos active">
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/2z5E7oQfD7k" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">The Beginner's Guide to Data Analytics</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/9sH6Vz_-GjU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">Understanding Data Types and Sources</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/uyhzZLw4fWU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">How Businesses Use Data Analytics for Growth</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+          </div>
+
+          <div class="pdfs">
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>What is Data Analytics? A Beginner's Overview <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>The Data Analytics Process Explained Step by Step <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>How to Think Like a Data Analyst <span>40 MB</span></p>
+            </div>
+            <button class="download-all">Download All ⬇️</button>
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="topic" onclick="togglePanel(this)">
+          <span>Introduction to Data Analytics & Fundamentals</span>
+          <span>
+            <span style="color: green;">3 PDFs</span> ·
+            <span style="color: green;">4 Videos</span>
+            <span class="arrow"><img src="assets/Vector.svg" alt=""></span>
+          </span>
+        </div>
+        <div class="content-panel">
+          <div class="tabs">
+            <div class="tab active" onclick="switchTab(event, 'videos')">Videos</div>
+            <div class="tab" onclick="switchTab(event, 'pdfs')">PDF's</div>
+          </div>
+
+          <div class="videos active">
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/2z5E7oQfD7k" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">The Beginner's Guide to Data Analytics</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/9sH6Vz_-GjU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">Understanding Data Types and Sources</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/uyhzZLw4fWU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">How Businesses Use Data Analytics for Growth</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+          </div>
+
+          <div class="pdfs">
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>What is Data Analytics? A Beginner's Overview <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>The Data Analytics Process Explained Step by Step <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>How to Think Like a Data Analyst <span>40 MB</span></p>
+            </div>
+            <button class="download-all">Download All ⬇️</button>
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="topic" onclick="togglePanel(this)">
+          <span>Introduction to Data Analytics & Fundamentals</span>
+          <span>
+            <span style="color: green;">3 PDFs</span> ·
+            <span style="color: green;">4 Videos</span>
+            <span class="arrow"><img src="assets/Vector.svg" alt=""></span>
+          </span>
+        </div>
+        <div class="content-panel">
+          <div class="tabs">
+            <div class="tab active" onclick="switchTab(event, 'videos')">Videos</div>
+            <div class="tab" onclick="switchTab(event, 'pdfs')">PDF's</div>
+          </div>
+
+          <div class="videos active">
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/2z5E7oQfD7k" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">The Beginner's Guide to Data Analytics</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/9sH6Vz_-GjU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">Understanding Data Types and Sources</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+            <div class="video-card">
+              <iframe src="https://www.youtube.com/embed/uyhzZLw4fWU" frameborder="0" allowfullscreen></iframe>
+              <div class="video-title">How Businesses Use Data Analytics for Growth</div>
+              <div class="duration">4:00 mins</div>
+            </div>
+          </div>
+
+          <div class="pdfs">
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>What is Data Analytics? A Beginner's Overview <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>The Data Analytics Process Explained Step by Step <span>40 MB</span></p>
+            </div>
+            <div class="pdf-card">
+              <img src="pdf-icon.png" alt="PDF icon" />
+              <p>How to Think Like a Data Analyst <span>40 MB</span></p>
+            </div>
+            <button class="download-all">Download All ⬇️</button>
+          </div>
+        </div>
+      </div>
+      
+      <p class="small-line">We are curating the book based on these Topics...</p>
+    </div>
+
+
+
+
+    
+    </div>
+    <!-- PDF Preview Section -->
+<section class="pdf-preview-section">
+  <div class="pdf-banner">BOOK ON “DATA ANALYTICS” →</div>
+
+  <div class="pdf-container">
+    <div class="pdf-preview">
+      <div class="pdf-header">
+        <span>Data Analytics</span>
+        <span class="page-count">50 Pages</span>
+      </div>
+      <!-- <img src="Book pdf.png" alt="PDF Preview" /> -->
+    </div>
+
+    <button class="download-btn">Download PDF ⬇️</button>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <h3>Your Learning Journey Doesn’t Stop Here!🚀</h3>
+  <p>
+    You’ve gained valuable insights—now it’s time to deepen your expertise! Explore
+    <strong class="highlight">our curated courses</strong> designed to help you master your skills and achieve your goals faster.
+  </p>
+  <button class="cta-btn">Explore Courses Now →</button>
+</section>
+
+  </section>
+  
+  <script>
+    function toggleDropdown(element) {
+      const next = element.nextElementSibling;
+      const arrow = element.querySelector(".arrow");
+
+      if (next.style.display === "block") {
+        next.style.display = "none";
+        arrow.classList.remove("rotate");
+      } else {
+        next.style.display = "block";
+        arrow.classList.add("rotate");
+      }
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

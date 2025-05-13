@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetSkilled</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./colors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+   <!-- Top Banner -->
+   <div class="top-banner">
+    Lorem ipsum dolor sit amet consectetur. Massa aliquam sed sed accumsan ac dolor. <a href="#"
+        class="banner-link">Subscribe</a> →
+</div>
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">Get<span>Skilled</span></div>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="../AboutUs/index.html">About</a>
+
+            <div class="dropdown dropdown-small">
+                <a href="#" class="dropdown-toggle">
+                    Programs <i class=""><img src="assets/Vector.svg" alt=""></i>
+                </a>
+
+                <div class="dropdown-content">
+                    <a href="../AllPrograms/technology.html">Technology</a>
+                    <a href="../AllPrograms/engineering.html">Engineering</a>
+                    <a href="../AllPrograms/commerce.html">Commerce</a>
+                    <a href="../AllPrograms/arts.html">Arts</a>
+                </div>
+            </div>
+
+            <a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a>
+            <a href="../community/index.html">Community <span class="exclusive">Exclusive</span></a>
+
+            <div class="dropdown">
+
+                <a href="#" class="dropdown-toggle dropdown-large">
+                    More <i class=""><img src="assets/Vector.svg" alt=""></i></a>
+
+                <div class="dropdown-content">
+                    <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                    <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                    <a href="../AI course creator/index.html">AI Course Generator</a>
+                    <a href="../aibookgpt/index.html">AI Book GPT</a>
+                </div>
+            </div>
+
+            <a href="#footer">Contact</a>
+        </nav>
+        <a href="signup.html">
+            <button class="signup-btn">Sign Up</button>
+        </a>
+    </div>
+</header>
+<!-- Mobile Header -->
+<div class="mobile-header">
+    <div class="logo">Get<span>Skilled</span></div>
+    <div class="mobile-hamburger" onclick="toggleMobileMenu()">☰</div>
+</div>
+
+<nav class="mobile-nav" id="mobileNav">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../AboutUs/index.html">About</a></li>
+        <li class="mobile-dropdown">
+            <a href="#" onclick="toggleMobileDropdown(event, 'mobilePrograms')">Programs ▾</a>
+            <div class="mobile-dropdown-content" id="mobilePrograms">
+                <a href="../AllPrograms/technology.html">Technology</a>
+                <a href="../AllPrograms/engineering.html">Engineering</a>
+                <a href="../AllPrograms/commerce.html">Commerce</a>
+                <a href="../AllPrograms/arts.html">Arts</a>
+            </div>
+        </li>
+        <li><a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a></li>
+        <li><a href="../community/index.html">Community</a> <span class="mobile-premium">Premium</span></li>
+        <li class="mobile-dropdown">
+            <a href="#" onclick="toggleMobileDropdown(event, 'mobileMore')">More ▾</a>
+            <div class="mobile-dropdown-content" id="mobileMore">
+                <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                <a href="../AI course creator/index.html">AI Course Creator</a>
+                <a href="../aibookgpt/index.html">AI Book GPT</a>
+            </div>
+        </li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="login-container">
+            <div class="login-image">
+                <!-- This is where the illustration would go -->
+                <!-- We're not including images as per instructions -->
+                <img src="./assets/Left.svg">
+            </div>
+            <div class="login-form">
+                <div class="login-header">
+                    <div class="logo logo-sec">Get<span>Skilled</span></div>
+                    <h2 class="login-title">Login</h2>
+                    <p>Sign up to Apply and let us help you achieve your dreams.</p>
+                </div>
+
+                <!-- Initial Phone Input Form -->
+                <div id="phone-form">
+                    <div class="form-group">
+                        <label for="phone">Mobile number*</label>
+                        <div class="phone-input">
+                            <div class="country-code">
+                                <div class="country-flag"></div>
+                                <span>🇮🇳(+91)</span>
+                            </div>
+                            <input type="tel" id="phone" placeholder="">
+                        </div>
+                    </div>
+
+                    <button class="submit-btn" id="send-otp-btn">Send OTP</button>
+
+                    <div class="signup-link">
+                        Don't have an account? <a href="./signup.html">Sign Up</a>
+                    </div>
+                </div>
+
+                <!-- OTP Verification Form (initially hidden) -->
+                <div id="otp-form" style="display: none;">
+                    <div class="verify-title">Verify to Continue</div>
+                    <div class="otp-sent-text">
+                        We have sent an OTP at +91 91234 56789
+                        <a href="#" class="edit-link">Edit</a>
+                    </div>
+
+                    <div>Enter OTP to continue</div>
+
+                    <div class="otp-container">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-1">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-2">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-3">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-4">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-5">
+                        <input type="text" maxlength="1" class="otp-input" id="otp-6">
+                    </div>
+
+                    <button class="submit-btn">Continue</button>
+
+                    <div class="signup-link">
+                        Didn't receive OTP? <a href="#" class="resend-link"
+                            style="color: var(--primary-color);">Resend</a>
+                    </div>
+                </div>
+
+                <div class="or-divider">
+                    <span>or login with</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn">
+                        <span><img src="./assets/google_icon.png" class="login-icons"></span> Google
+                    </button>
+                    <button class="social-btn">
+                        <span><img src="./assets/Apple_icon.png" class="login-icons"></span> Apple
+                    </button>
+                </div>
+
+                <div class="terms">
+                    *Terms & Conditions Applied
+                </div>
+
+                <!-- Mobile view needs to show terms at the bottom of both forms -->
+                <!-- <div class="terms" style="margin-top: 2rem; text-align: right;">
+                    *Terms & Conditions Applied
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetSkilled Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">Get<span>Skilled</span></div>
+            <ul class="nav-links">
+                <li><a href="#">AI Interview Prep </a><img src="arrow.svg" alt=""></li>
+                <li><a href="#">Community </a><img src="arrow.svg" alt=""></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="info.svg" alt="">
+            <img src="notif.svg" alt="">
+            <img src="profilepic.png" alt="Profile" id="profileBtn">
+            <div class="dropdown" id="profileDropdown">
+                <div class="profile-info">
+                    <div class="profile-photo"><img src="profilepic.png" alt="Profile"></div>
+                    <div class="profile-right">
+                        <p>Vanshika Kandya </p>
+                        <a href="#">View Profile <img src="arrow-circle.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">Settings</div>
+                </div>
+
+                <div class="drop-down-content lpgout">
+                    <div class="content-left"><img src="logout.png" alt=""></div>
+                    <div class="content-right"><a href="#">Logout</a></div>
+                </div>
+
+            </div>
+
+
+            <div class="dropdown-phone" id="profileDropdown-phone">
+                <div class="profile-info">
+                    <div class="profile-photo"><img src="profilepic.png" alt="Profile"></div>
+                    <div class="profile-right">
+                        <p>Vanshika Kandya </p>
+                        <a href="../dashboard_learn/index.html">View Profile <img src="arrow-circle.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn" data-target="progressContent">Bookmarks</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right nav-tab-btn" id="openSettingsBtn" data-target="communityContent">Doubts</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">My courses</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">About GetSkilled</div>
+                </div>
+
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">Notification Preferences</div>
+                </div>
+                <div class="drop-down-content lpgout">
+                    <div class="content-left"><img src="logout.png" alt=""></div>
+                    <div class="content-right">Logout</a></div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <!-- Left Sidebar -->
+        <aside id="leftSidebar" class="sidebar">
+
+            <a href="../dashboard/index.html"><img src="arrowwithline.svg" alt=""></a>
+            <div class="sidebar-content">
+                <h3>Data Analytics and AI</h3>
+                <p class="module-info">MODULE 3</p>
+                <button class="sidebar-btn  nav-tab-btn active" data-target="learnContent"><img src="learn.svg" alt="">
+                    Learn</button>
+                <button class="sidebar-btn  nav-tab-btn" data-target="practiceContent"><img src="rocket-grey.svg"
+                        alt="">
+                    Practice</button>
+            </div>
+        </aside>
+        <div class="main-and-sidebar">
+            <!-- Center Content -->
+            <section class="main-content">
+                <div id="contentArea">
+                    <div id="learnContent" class="tab-content active">
+                        <section class="welcome-card">
+                            <div>
+                                <h2>Welcome Back, Vanshika! 👋</h2>
+                                <p>Resume your learning journey and excel in the course by completing all lectures!</p>
+                            </div>
+                            <div>
+                                <button class="resume-btn-arrow">
+                                   <a href="../learning page copy/index.html"> Resume Learning →</a></button>
+                            </div>
+                        </section>
+
+                        <section class="progress-section">
+                            <div class="progress-card">
+                                <div class="progress-text">
+                                    <div>
+                                        <span class="trophy-icon">🏆</span>
+                                        Your Overall Progress<br>
+                                        <span class="highlight-completed">38% Completed</span>
+                                    </div>
+                                    <div>
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 38%;"></div>
+                                </div>
+                            </div>
+                            <span class="exclusive">Continue learning</span>
+                            <section class="module-resume">
+                                <div class="module-resume-div">
+                                    <p><strong>Module 3</strong></p>
+                                    <p>Lecture 4 - <strong>Understanding Data Flows</strong> (1hr 20min)</p>
+                                </div>
+                                <div class="resume-btn-container">
+                                    <button class="resume-btn">Resume Learning</button>
+                                    <p class="progress-stats">Score <strong>1000/5000</strong> • Videos
+                                        <strong>10/50</strong> •
+                                        Problems <strong>10/50</strong>
+                                    </p>
+                                </div>
+
+
+                            </section>
+
+                        </section>
+
+
+
+                        <section class="modules-list">
+                            <h3>List of Modules</h3>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="module">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <h3>Introduction to Data Analytics and Fundamentals <span
+                                            class="status">Completed</span><br><small>Module 1</small></h3>
+
+                                </div>
+
+                                <div class="chapter-list">
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+                                    <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                        <span class="completed">Completed</span>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </section>
+                    </div>
+                    <!-- Practice -->
+                    <div id="practiceContent" class="tab-content">
+                        <section class="welcome-card">
+                            <div>
+                                <h2>Welcome Back, Vanshika! 👋</h2>
+                                <p>Resume your learning journey and excel in the course by completing all lectures!</p>
+                            </div>
+
+                        </section>
+
+                        <br>
+
+                        List of Topics
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="module-header" onclick="toggleModule(this)">
+                                <h3>Introduction to Data Analytics and Fundamentals <span
+                                        class="status">Completed</span><br><small>Module 1</small></h3>
+
+                            </div>
+
+                            <div class="chapter-list">
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+                                <div class="chapter"><img src="tick.svg" alt="">Chapter 1 - What is Data Analytics
+                                    <span class="completed">Completed</span>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- Your styled HTML -->
+                    </div>
+                    <!-- Progress -->
+                    <div id="progressContent" class="tab-content">
+                        <div class="bookmark-section">
+                            <div class="bookmark-header">
+                                <svg width="24" height="24" fill="none" stroke="green" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 8 8 12 12 16" />
+                                </svg>
+                                <div>
+                                    <h2>Bookmarks</h2>
+                                    <p>Find all your bookmarked resources here</p>
+                                </div>
+                            </div>
+
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <h3>Module 3</h3>
+                                    <svg class="chevron-icon rotate" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" data-toggle>
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+
+                                <div class="module-content">
+                                    <div class="resource-cards">
+                                        <div class="resource-card video">
+                                            <div class="type-badge video">Video</div>
+                                            <h4>Chapter 4</h4>
+                                            <p><svg width="16" height="16">
+                                                    <rect width="16" height="10" fill="#4CAF50" />
+                                                </svg> Understanding Data flows</p>
+                                            <svg class="bookmark-icon" width="16" height="16" fill="green"
+                                                viewBox="0 0 24 24">
+                                                <path d="M5 3v18l7-5 7 5V3z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="resource-card notes">
+                                            <div class="type-badge notes">Notes</div>
+                                            <h4>Chapter 5</h4>
+                                            <p><svg width="16" height="16">
+                                                    <rect width="12" height="14" fill="#9C27B0" />
+                                                </svg> Understanding Data flows</p>
+                                            <svg class="bookmark-icon" width="16" height="16" fill="green"
+                                                viewBox="0 0 24 24">
+                                                <path d="M5 3v18l7-5 7 5V3z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="resource-card problem">
+                                            <div class="type-badge problem">Problem</div>
+                                            <h4>Chapter 3</h4>
+                                            <p><svg width="16" height="16">
+                                                    <rect width="12" height="12" fill="#03A9F4" />
+                                                </svg> Understanding Data flows</p>
+                                            <svg class="bookmark-icon" width="16" height="16" fill="green"
+                                                viewBox="0 0 24 24">
+                                                <path d="M5 3v18l7-5 7 5V3z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <h3>Module 4</h3>
+                                    <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" data-toggle>
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="module-content" style="display: none;">
+                                    <div class="resource-cards">
+                                        <!-- Additional resource cards here -->
+                                        <p style="padding: 1rem;">No bookmarks yet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="communityContent" class="tab-content">
+                        <div class="doubts-section">
+                            <div class="doubts-header">
+                                <svg width="24" height="24" stroke="green" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6" />
+                                </svg>
+                                <div>
+                                    <h2>Doubts</h2>
+                                    <p>Find all your asked Doubts here</p>
+                                </div>
+                            </div>
+
+                            <div class="tabs">
+                                <button class="tab active" data-tab="unresolved">Unresolved</button>
+                                <button class="tab" data-tab="resolved">Resolved</button>
+                            </div>
+
+                            <div class="doubts-content">
+                                <div class="doubt-card">
+                                    <div class="label">Problem</div>
+                                    <h3><svg width="16" height="16">
+                                            <path d="M5 3l14 9-14 9V3z" fill="green" />
+                                        </svg> Understanding Data flows</h3>
+                                    <p>Module 3 &bull; Chapter 3</p>
+                                    <a href="#">Go to Problem <svg width="14" height="14" stroke="green" fill="none"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg></a>
+                                    <span class="date">Raised on <strong>12th April 2025</strong></span>
+                                </div>
+                                <div class="doubt-card">
+                                    <div class="label">Problem</div>
+                                    <h3><svg width="16" height="16">
+                                            <path d="M5 3l14 9-14 9V3z" fill="green" />
+                                        </svg> Understanding Data flows</h3>
+                                    <p>Module 3 &bull; Chapter 3</p>
+                                    <a href="#">Go to Problem <svg width="14" height="14" stroke="green" fill="none"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg></a>
+                                    <span class="date">Raised on <strong>12th April 2025</strong></span>
+                                </div>
+                                <div class="doubt-card">
+                                    <div class="label">Problem</div>
+                                    <h3><svg width="16" height="16">
+                                            <path d="M5 3l14 9-14 9V3z" fill="green" />
+                                        </svg> Understanding Data flows</h3>
+                                    <p>Module 3 &bull; Chapter 3</p>
+                                    <a href="#">Go to Problem <svg width="14" height="14" stroke="green" fill="none"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg></a>
+                                    <span class="date">Raised on <strong>12th April 2025</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+            <!-- Right Sidebar -->
+            <aside class="right">
+                <div class="excel-interview nav-tab-btn" data-target="progressContent">
+                    <div class="excel-icon ">
+                        <img src="bookmark.svg" alt="">
+                    </div>
+                    <div class="excel-text">
+                        <p>View your Saved Messages</p>
+
+
+                    </div>
+
+                </div>
+                <div class="excel-interview nav-tab-btn" data-target="communityContent">
+                    <div class="excel-icon">
+                        <img src="green-info.svg" alt="">
+                    </div>
+                    <div class="excel-text">
+                        <p>All your Doubts are here!</p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="streak-card">
+                    <div class="streak" id="streakTrigger">
+                        <div><img src="fire-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <p>Your Streak</p>
+                            <span>0/7 days practiced this week</span>
+                        </div>
+
+                    </div>
+
+                    <div class="calendar">
+                        <p>April 21 - April 27</p>
+                        <div class="days">
+                            <span
+                                class="monday">M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="excel-interview">
+                    <div class="excel-icon">
+                        <img src="excel-icon.svg" alt="">
+                    </div>
+                    <div class="excel-text">
+                        <p>Excel your interview Prep with us</p>
+                        <span>Ace your interviews now <img src="arrow-circle.svg" alt=""></span>
+
+                    </div>
+
+                </div>
+                <div class="small-text">
+                    <img src="rocket.svg" alt="">
+                    Take a dashboard Tour
+                </div>
+
+
+            </aside>
+
+        </div>
+    </main>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay">
+        <!-- Side Drawer -->
+        <div class="side-drawer" id="sideDrawer">
+            <!-- Progress Container -->
+
+            <div class="streak" id="streakTrigger">
+                <div><img src="fire-icon.svg" alt="">
+                </div>
+                <div>
+                    <p>Your Streak</p>
+                    <span>0/7 days practiced this week</span>
+                </div>
+
+
+
+
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-info">
+                    <h4>Your Overall Progress</h4>
+                    <p class="progress-percent">38% Completed</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 38%;"></div>
+
+                    </div>
+
+                    <div class="due-date">
+                        Due date is <strong>12th July, 2025, 11:59PM</strong>
+                    </div>
+                </div>
+
+            </div>
+            <div class="progress-icon">
+                <div class="icon-circle">
+                    <div class="calendar-wrapper">
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="settings-overlay hidden">
+
+        <div class="settings-modal ">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <span class="close-settings-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="settings-sidebar">
+                    <button class="settings-sidebar-btn active" data-tab="personal">Personal Details</button>
+                    <button class="settings-sidebar-btn" data-tab="courses">My Courses</button>
+                    <button class="settings-sidebar-btn" data-tab="notifications">Notification Preferences</button>
+                    <button class="settings-sidebar-btn" data-tab="about">About GetSkilled</button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="settings-content">
+                    <div class="tab-content active" data-tab="personal">
+                        <!-- Personal Details Content -->
+
+                        <form class="details-form">
+                            <h3 class="section-heading">Personal Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name<span class="required">*</span></label>
+                                    <input type="text" id="name" placeholder="Vanshika Kandya" disabled />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Mobile number<span class="required">*</span></label>
+                                    <div class="phone-input">
+                                        <span class="flag">🇮🇳</span>
+                                        <span class="code">(+91)</span>
+                                        <span class="number">73892 82793</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+                                    <select id="location">
+                                        <option selected>Location ABC</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" value="vanshika@gmail.com" />
+                                </div>
+                            </div>
+
+                            <button type="button" class="save-btn">Save</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-content" data-tab="courses">
+                        <!-- My Courses Content -->
+                        <div class="course-summary-wrapper">
+                            <div class="course-card">
+                                <div class="course-icon">
+                                    <img src="https://img.icons8.com/ios-filled/50/4caf50/combo-chart--v1.png"
+                                        alt="icon" />
+                                </div>
+
+                                <div class="course-details">
+                                    <h3>Combo | Data Analytics and AI</h3>
+                                    <div class="course-meta">
+                                        <div>
+                                            <span class="label-stg">Course Bought on:</span>
+                                            <div class="value">8th June, 2025</div>
+                                        </div>
+                                        <div>
+                                            <span class="label-stg">End Date:</span>
+                                            <div class="value">8th June, 2025</div>
+                                        </div>
+                                        <div>
+                                            <span class="label-stg">Amount:</span>
+                                            <div class="value">₹10,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course-actions">
+                                    <a href="#" class="invoice-link">Download Invoice <span>⬇️</span></a>
+                                    <button class="go-course-btn">Go to Course →</button>
+                                </div>
+                            </div>
+
+                            <a href="#" class="explore-link">Explore More Courses →</a>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-content" data-tab="notifications">
+                        <div class="notifications-container">
+                            <h3>Notification Preferences</h3>
+
+                            <div class="notification-row">
+                                <div class="notification-text">
+                                    <strong>Important Emails</strong>
+                                    <p>This includes Login OTPs, Receipts and password reset links.</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="notification-row">
+                                <div class="notification-text">
+                                    <strong>Course updates</strong>
+                                    <p>Receive all important updates and reminders for your active courses</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="notification-row">
+                                <div class="notification-text">
+                                    <strong>Offers / Discounts / New Course launches</strong>
+                                    <p>Stay updated with latest promotional offers and discount coupons running on our
+                                        courses and services.</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="notification-row">
+                                <div class="notification-text">
+                                    <strong>Placement Opportunities</strong>
+                                    <p>Get all updates for latest Job and Internship opportunities posted by us.</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-tab="about">
+                        <section class="about-skilled">
+                            <div class="about-text">
+                                <p>
+                                    At Get Skilled, we bridge the gap between ambition and achievement by empowering
+                                    individuals with in-demand digital skills.
+                                    Whether you're a student, job-seeker, or professional looking to upskill, our
+                                    hands-on courses and expert-led training are
+                                    designed to help you thrive in the evolving tech landscape. With a focus on
+                                    real-world application, career readiness, and
+                                    personalized growth, we’re here to help you get skilled, get confident, and get
+                                    ahead.
+                                </p>
+                                <p class="highlight">What are you waiting for? <strong>Let’s GetSkilled
+                                        Together!</strong>🚀</p>
+                            </div>
+
+                            <div class="social-connect">
+                                <p>Connect with us on:</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <p>Or reach out to us at:</p>
+                                <div class="contact-box">
+                                    <p><i class="fas fa-envelope"></i> gyaankool@gmail.com</p>
+                                    <p><i class="fas fa-phone-alt"></i> +91 95910 09606</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> 103, Greenwood Hub, Sector 65, Gurugram,
+                                        122001</p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

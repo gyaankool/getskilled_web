@@ -1,0 +1,938 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ensures profile goes to the right */
+    padding: 1rem 2rem;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #747474;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: auto; /* pushes it to the right */
+}
+.profile img {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    margin-right:2rem;
+    margin-top:12rem;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: none;
+    padding: 0.5rem;
+    width: 13rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #C5F0D5;
+    border-radius: 5px;
+}
+
+.profile-right p{
+   margin:0;
+}
+
+
+.dropdown a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #333;
+
+}
+.profile-right a{
+    margin:0;
+    color:#16A34A;
+    text-decoration: underline;
+}
+.drop-down-content:hover {
+    background: #F0FFF6;
+}
+
+.drop-down-content{
+    display: flex;
+    
+    gap: 0.5rem;
+    
+    align-items: center;
+}
+.resume-btn a{
+    text-decoration: none;
+    color: white;
+}
+.content-left img{
+    margin-top:0.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-self: center;
+}
+.logo{
+    
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 160%;
+letter-spacing: 0%;
+
+}
+
+.logo span{
+    color: #16A34A;
+}
+.logout {
+    color: red;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    padding: 0rem 0rem 0rem 15rem;
+    gap: 13rem;
+}
+
+aside.right{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding:0.8rem;
+    border-left: 2px solid #ECECEC ;
+    height: 100%;
+   
+}
+
+.left {
+    margin-top:3rem;
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+}
+
+h2{
+    
+font-weight: 600;
+font-size: 1rem;
+line-height: 160%;
+letter-spacing: 0%;
+
+}
+
+.count{
+    background-color: #ECECEC;
+    padding:0.2rem 0.6rem;
+    border-radius:100px;
+    color:#747474;
+}
+
+/* Cards */
+.program-card {
+    background: white;
+    border-radius: 16px;
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+    overflow: hidden;
+    border:1px solid #ECECEC;
+}
+
+
+.module-desc{
+    margin-top:0rem;
+    margin:0;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color:#747474;
+}
+
+.module-desc{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    
+
+    
+}
+
+.progress-box{
+    border: 1px solid #ECECEC;
+    padding:0.8rem;
+    border-radius: 12px;
+    margin-top:1rem;
+}
+
+.percentage{
+    
+font-weight: 600;
+font-size: 0.7rem;
+line-height: 150%;
+letter-spacing: 0%;
+margin-bottom:1rem;
+}
+
+.module-title{
+    margin:0;
+   
+font-weight: 600;
+font-size: 14px;
+line-height: 160%;
+letter-spacing: 0%;
+
+}
+
+.program-title{
+    display: flex;
+    align-items: center;
+}
+
+.program-header {
+    display: flex;
+    /* justify-content: space-between; */
+    
+    cursor: pointer;
+   
+font-weight: 600;
+font-size: 1rem;
+line-height: 160%;
+letter-spacing: 0%;
+
+}
+
+.icon{
+    margin-right:1rem;
+}
+
+.arrow{
+    margin-left:18rem;
+}
+
+.desc{
+ 
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+letter-spacing: 0%;
+color:#2C2C2C;
+}
+
+.header-title{
+    padding:1rem;
+}
+
+.program-body {
+    padding: 1rem;
+    display: none;
+    background-color: #F0FFF6;
+    border-radius: 16px;
+    margin:1rem;
+
+}
+
+
+.resume-btn {
+    background: #16A34A;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top:1rem;
+    margin-left:4rem;
+}
+
+.module {
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background: #C2F9D6;
+    height: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+.progress {
+    background: linear-gradient(90deg, #0A8B3A 0%, #00C749 100%);
+
+    height: 100%;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* aside.right {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.streak-card
+{
+    background: white;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border:1px solid #ECECEC;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+p{
+    margin:0;
+}
+
+.streak{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #C5F0D5;
+    padding:0.8rem;
+    border-radius: 12px;
+    margin-bottom:1rem;
+    
+font-weight: 600;
+font-size: 10px;
+line-height: 150%;
+letter-spacing: 0%;
+color:#747474;
+
+}
+.streak span{
+    font-family: Open Sans;
+font-weight: 600;
+font-size: 0.9rem;
+line-height: 160%;
+letter-spacing: 0%;
+color:black;
+
+}
+
+
+.community-card{
+    background: linear-gradient(90deg, #0A8B3A 0%, #00C749 100%);
+    color:White;
+   margin-top:0;
+
+padding-top: 24px;
+padding-right: 16px;
+padding-bottom: 24px;
+padding-left: 16px;
+gap: 24px;
+border-radius: 12px;
+margin-top:6rem;
+
+}
+
+.exclusive{
+    background: linear-gradient(99.94deg, #FF7B3A 57.95%, #FFAA81 77.89%, #FF7B3A 97.83%);
+   
+padding-top: 3.43px;
+padding-right: 6.86px;
+padding-bottom: 3.43px;
+padding-left: 6.86px;
+gap: 17.14px;
+border-radius: 3.43px;
+
+font-weight: 600;
+font-size: 0.5rem;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+
+}
+
+.community-card p{
+   
+font-weight: 600;
+font-size: 14px;
+line-height: 160%;
+letter-spacing: 0%;
+margin-bottom:0.5rem;
+}
+
+.community-card img{
+    margin-top:-38rem;
+    
+}
+
+
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.days span {
+    background-color:#F6F6F6;
+    padding:4px 1px;
+    border-radius: 100px;
+    width: 30px;
+    text-align: center;
+}
+.days .monday {
+    border: 1.5px solid transparent;
+    border-radius: 20px; /* 👈 Makes it rounded */
+    background:
+      linear-gradient(white, white) padding-box,  /* Inner background */
+      linear-gradient(45deg, #16A34A, #00C749) border-box; /* Border gradient */
+   color: #16A34A;
+   
+   
+    
+    
+}
+
+.calendar p{
+  margin-top:2rem; 
+  margin-bottom:1rem; 
+font-weight: 600;
+font-size: 0.7rem;
+line-height: 150%;
+letter-spacing: 0%;
+color:#747474;
+
+}
+
+
+/* Show dropdown */
+.dropdown.show {
+    display: block;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 99;
+}
+
+/* Side Drawer */
+.side-drawer {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    width: 300px;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: right 0.3s ease;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.side-drawer.active {
+    right: 0;
+}
+
+.excel-interview{
+
+    display: flex;
+    align-items: center;
+    margin-top:2rem;
+    padding:0.8rem;
+    border: 1px solid #ECECEC;
+    gap:1rem;
+    border-radius: 12px;
+}
+.excel-text{
+    
+font-weight: 400;
+font-size: 0.8rem;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
+
+.excel-text p{
+    margin:0;
+}
+
+.excel-text span{
+    
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+letter-spacing: 0%;
+text-decoration: underline;
+text-decoration-style: solid;
+color:#16A34A;
+text-decoration-thickness: 0%;
+text-decoration-skip-ink: auto;
+display: flex;
+    align-items: center;
+    gap:0.3rem;
+
+
+}
+
+.side-drawer{
+    width: 27%;
+}
+/* Container Styling */
+.progress-wrapper {
+    background-color: #f0fdf4;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+    max-width: 650px;
+   margin-bottom:2rem;
+  }
+  
+  /* Gradient Text */
+  
+  .progress-percent {
+   
+    
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    
+    margin: 0;
+  }
+  .progress-info h4{
+    margin:0;
+font-weight: 600;
+font-size: 0.8rem;
+line-height: 150%;
+letter-spacing: 0%;
+color: #747474;
+
+
+  }
+  
+ 
+  
+  /* Due Date */
+  .due-date {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #374151;
+    
+font-weight: 400;
+font-size: 0.8rem;
+line-height: 150%;
+letter-spacing: 0%;
+color: #747474;
+
+  }
+  
+  /* Progress Bar Container */
+  .progress-bar-container {
+    position: relative;
+    height: 12px;
+    background-color: #bbf7d0;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  /* Filled Bar */
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0A8B3A 0%, #00C749 100%);
+ 
+    border-radius: 8px 0 0 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Floating Icon at End of Bar */
+  
+  
+  
+  /* Calendar Layout */
+  .calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* One Week Row */
+  .calendar-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  /* Week Range Text */
+  .week-label {
+    
+font-weight: 600;
+font-size: 0.8rem;
+line-height: 150%;
+letter-spacing: 0%;
+color:#747474;
+  }
+  
+  /* Day Circles Container */
+  .days {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Individual Day Circle */
+  .day {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f3f4f6; /* light gray by default */
+    color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  /* Practiced Day */
+  .day.practiced {
+    background-color: #16A34A;
+    color: white;
+  }
+  
+  /* Optional: outline for current day (if needed later) */
+  .day.current {
+    border: 2px solid #22c55e;
+    background-color: transparent;
+    color: #22c55e;
+    font-weight: bold;
+  }
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .dashboard {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    aside.right {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .profile {
+        margin-left: auto;
+    }
+
+    .nav-links {
+        margin-left: 2rem;
+        gap: 1rem;
+    }
+
+    .arrow {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        gap: 0.5rem;
+    } */
+
+    .profile {
+        margin-left: 0;
+        justify-content: space-between;
+       
+    }
+
+    .dashboard {
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .program-card,
+    .program-body,
+    .progress-box,
+    .right,
+    .left {
+        width: 100%;
+    }
+
+    .program-header {
+        flex-wrap: wrap;
+    }
+
+    .resume-btn {
+        margin-left: 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .resume-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown {
+        width: 100%;
+        right: 0;
+        margin-top: 2rem;
+    }
+
+    .side-drawer {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:768px){
+    .nav-links{
+        display:none;
+
+    }
+
+    .profile img{
+        display:none;
+    }
+    #profileBtn{
+        display:block;
+    }
+    .navbar{
+        width:100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    aside.right{
+        width:100%;
+        
+        align-items: center;
+        
+        display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-behavior: smooth;
+        flex-direction: row;
+        white-space: nowrap;  /* Only needed if you're stacking inline children horizontally */
+flex-shrink: 0; 
+        
+        /* flex-wrap: wrap; */
+    }
+
+    .streak span{
+        font-size: 0.7rem;
+    }
+
+    
+    .excel-interview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;     /* Aligns items to the right in column */
+        justify-content: center;   /* Optional: center vertically */
+        width: 40%;
+      
+        margin:0;
+        
+      }
+      .calendar p {
+        margin:0;
+        font-size:0.7rem;
+      }
+      .days span{
+        font-size: 0.6rem;
+        padding:6px 0.5px;
+      }
+      .days{
+        gap:2px;
+      }
+
+
+.excel-text p{
+    font-size:0.6rem;
+}
+
+
+.excel-text span{
+    font-size:0.7rem;
+}
+    .streak-card{
+        height:60%;
+    }
+    .left{
+        margin:0;
+    }
+
+    .community-card{
+      display: none;
+    }
+    
+    .streak{
+        padding:0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    .community-card p{
+        font-size:0.5rem;
+    }
+}
+
+aside.right::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari */
+  }
+
+
+
+  @media (max-width: 768px) {
+     .dashboard, .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .dashboard {
+        flex-direction: column-reverse;
+        padding: 0rem;
+        gap: rem;
+    }
+
+    aside.right {
+        
+        align-items: stretch;
+        border-left: none;
+        border-top: 2px solid #ECECEC;
+    }
+
+    .left{
+        padding:1rem;
+    }
+
+    .program-header{
+        font-size:0.9rem;
+       justify-content: start;
+    }
+    .resume-btn{
+        width:auto;
+        
+    }
+    .header-button{
+        width:10rem;
+    }
+   .header-title{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+   }
+    
+}
+
+.dropdown-phone{
+    width: 100%;
+    right: 0;
+    
+    position: absolute;
+    margin-right: 2rem;
+    margin-top: 20rem;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: none;
+    padding: 0.5rem;
+    width: 13rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+.dropdown-phone{
+    display:none;
+}
+@media (max-width:768px){
+    .dropdown-phone.show{
+        display:block;
+    }
+    .dropdown.show{
+        display:none;
+    }
+
+    .drop-down-content{
+        margin:1rem;
+    }
+
+}

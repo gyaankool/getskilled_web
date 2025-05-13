@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetSkilled</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Lorem ipsum dolor sit amet consectetur. Massa aliquam sed sed accumsan ac dolor. <a href="#"
+            class="banner-link">Subscribe</a> →
+    </div>
+    <!-- Desktop Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Get<span>Skilled</span></div>
+
+            <div class="hamburger" >
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../AboutUs/index.html">About</a>
+
+                <div class="dropdown dropdown-small">
+                    <a href="#" class="dropdown-toggle">
+                        Programs <i class=""><img src="assets/Vector.svg" alt=""></i>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="../AllPrograms/technology.html">Technology</a>
+                        <a href="../AllPrograms/engineering.html">Engineering</a>
+                        <a href="../AllPrograms/commerce.html">Commerce</a>
+                        <a href="../AllPrograms/arts.html">Arts</a>
+                    </div>
+                </div>
+
+                <a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a>
+                <a href="../community/index.html">Community <span class="exclusive">Exclusive</span></a>
+
+                <div class="dropdown">
+
+                    <a href="#" class="dropdown-toggle dropdown-large">
+                        More <i class=""><img src="assets/Vector.svg"  alt=""></i></a>
+
+                    <div class="dropdown-content">
+                        <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                        <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                        <a href="../AI course creator/index.html">AI Course Generator</a>
+                        <a href="../aibookgpt/index.html">AI Book GPT</a>
+                    </div>
+                </div>
+
+                <a href="#footer">Contact</a>
+            </nav>
+            <a href="../loginandregister/signup.html">
+                <button class="signup-btn">Sign Up</button>
+            </a>
+        </div>
+    </header>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="logo">Get<span>Skilled</span></div>
+        <div class="mobile-hamburger" onclick="toggleMobileMenu()">☰</div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../AboutUs/index.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobilePrograms')">Programs ▾</a>
+                <div class="mobile-dropdown-content" id="mobilePrograms">
+                    <a href="../AllPrograms/technology.html">Technology</a>
+                    <a href="../AllPrograms/engineering.html">Engineering</a>
+                    <a href="../AllPrograms/commerce.html">Commerce</a>
+                    <a href="../AllPrograms/arts.html">Arts</a>
+                </div>
+            </li>
+            <li><a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a></li>
+            <li><a href="../community/index.html">Community</a> <span class="mobile-premium">Premium</span></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobileMore')">More ▾</a>
+                <div class="mobile-dropdown-content" id="mobileMore">
+                    <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                    <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                    <a href="../AI course creator/index.html">AI Course Creator</a>
+                    <a href="../aibookgpt/index.html">AI Book GPT</a>
+                </div>
+            </li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The <span class="highlight">Skill Revolution</span> Begins Here</h1>
+                <p>At GetSkilled, we don't teach for exams. We teach for life. Real-world projects, research-backed
+                    curriculum, and a 'learn by doing' mindset – everything we do is designed to help you build skills
+                    that matter.</p>
+
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="assets/arrow-icon.svg" alt=""></span>
+                        <span>Research-Driven Curriculum</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="assets/arrow-icon.svg" alt=""></span>
+                        <span>Learn by Doing</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="assets/arrow-icon.svg" alt=""></span>
+                        <span>Job & Internship Support</span>
+                    </div>
+                </div>
+
+                <a href="#explore" class="cta-button">
+                    Explore Our Programs
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <!-- Placeholder for illustration -->
+                <div
+                    style="width: 16rem; height: 14rem;  border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+                    <img src="./assets/Illustration (3).svg" class="idea-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="partners-content">
+                <div>
+                    <h2>Our Partners</h2>
+                    <p>Get guidance from the best alum of these institutions</p>
+                </div>
+                <div class="partners-grid">
+                    <!-- Partner logos would go here -->
+                    <div class="partner-logo">
+                        <img src="./assets/Indian_Institute_of_Technology_Ropar_logo 1.svg" class="partner-logos">
+                        <img src="./assets/stanford-university-logo-97C549CD89-seeklogo.com 1.svg"
+                            class="partner-logos">
+                        <img src="./assets/Kotak_Mahindra_Bank_logo 1.svg" class="partner-logos">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./assets/Indian_Institute_of_Technology_Bombay_Logo.svg 1.svg" class="partner-logos">
+                        <img src="./assets/IIT_Delhi_logo 1.svg" class="partner-logos">
+                        <img src="./assets/Boston-Consulting-Group-Logo-Vector.svg- 1.svg" class="partner-logos">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="Secondcontainer">
+        
+        <section class="story-section">
+            <div class="story-image">
+                <!-- Placeholder for founder image -->
+                <div
+                    style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                    <img src="./assets/working-businessman.jpg" class="founder-img">
+                </div>
+                <div class="founder-quote">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">We didn't want to build just another edtech platform. We wanted to create a
+                        place where learning feels alive.</p>
+                    <p class="quote-author">- Rahul Sharma, Founder</p>
+                </div>
+            </div>
+            <div class="story-content">
+                <div class="tag">Our Story</div>
+                <h2>What If Learning <span class="highlight">Evolved</span> With the World?</h2>
+                <p>When the founders of GetSkilled reflected on their own journeys through education, a common
+                    frustration echoed — too many classrooms felt like memory tests, not skill-building grounds.
+                    Students were cramming for grades, not crafting real solutions. Curriculums were outdated. Projects
+                    were theoretical. And when the degree was done, most were still asking, "Now what?"</p>
+                <p>In a fast-moving world, why was education stuck in the past?</p>
+                <p>That's when they decided to build something different. A place where learning is research-driven,
+                    hands-on, and truly prepares you for the real world — not just the exam hall.</p>
+                <p>GetSkilled isn't just another edtech platform. It's where learning comes alive.</p>
+            </div>
+
+           
+        </section>
+
+        <section class="learning-model-section">
+            
+            <div class="model-header">
+                <span class="tag">How are we different?</span>  
+                <h2>Our Learning Model: Built for the Future</h2>
+            </div>
+
+            <div class="model-features">
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./assets/Icon.svg"></div>
+                    
+                    <p>Built on <strong>
+                        deep industry and academic research</strong>— just what the real world demands.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./assets/Icon(2).svg"></div>
+                   
+                    <p>Work on <strong>real-world projects</strong>r from day one, solving problems that actually matter.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./assets/Icon(1).svg"></div>
+                    
+                    <p><strong> True learning</strong> happens by doing— platform is built for those who want to build & create.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="Thirdcontainer">
+        <section class="faculty-section">
+            <div class="tag">Our Faculty</div>
+            <h2>We Brought the Best to <span class="highlight">Build the Best</span></h2>
+            <p class="section-description">Our curriculum is not designed in a boardroom. It's crafted by real
+                educators, researchers, and industry leaders who know what today's world demands.</p>
+
+            <div class="carousel-container">
+               
+                <div class="carousel" id="faculty-carousel">
+                    <!-- Faculty Card 1 -->
+                    <div class="faculty-card">
+                        <div class="card-image">
+                            <!-- Placeholder for faculty image -->
+                            <div
+                                style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                                <img src="./assets/vivek_narayan.png" style="height: 100%; width:100%">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="faculty-name">
+                                Vivek Narayan
+                                <a href="#" class="linkedin-icon">in</a>
+                            </div>
+                            <div class="university">IIT BHU and IIM-Calcutta</div>
+                            <p class="experience">Over 30 years of Corporate Research & Academic Experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Card 2 -->
+                    <div class="faculty-card">
+                        <div class="card-image">
+                            <!-- Placeholder for faculty image -->
+                            <div
+                                style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                                <img src="./assets/Aman_singh.png" style="height: 100%; width:100%">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="faculty-name">
+                                Aman Singh
+                                <a href="#" class="linkedin-icon">in</a>
+                            </div>
+                            <div class="university">IIT Delhi</div>
+                            <p class="experience">Tech @ SkyBox. Ex-founder of SayF. Expanded the business to achieve an
+                                annual GMV of 150 crore</p>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Card 3 -->
+                    <div class="faculty-card">
+                        <div class="card-image">
+                            <!-- Placeholder for faculty image -->
+                            <div
+                                style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                                <img src="./assets/paras_gupta.png" style="height: 100%; width:100%">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="faculty-name">
+                                Paras Gupta
+                                <a href="#" class="linkedin-icon">in</a>
+                            </div>
+                            <div class="university">Stanford and IIT Delhi</div>
+                            <p class="experience">Founder @ Yelox Payments</p>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Card 4 -->
+                    <div class="faculty-card">
+                        <div class="card-image">
+                            <!-- Placeholder for faculty image -->
+                            <div
+                                style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                                <img src="./assets/lokap_sahu.png" style="height: 100%; width:100%">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="faculty-name">
+                                Lokap Sahu
+                                <a href="#" class="linkedin-icon">in</a>
+                            </div>
+                            <div class="university">IIT Bombay</div>
+                            <p class="experience">Founder @ Inquiply. Raised $180M. Backed by Titan Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Faculty Cards can be added here -->
+                </div>
+
+                <div class="carousel-nav">
+                    
+                    <button class="nav-button" id="next-btn"><img src="assets/arrow.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Industry Partners</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Success Stories</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Interview Prep Users</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sp-testimonial-container">
+        <!-- Testimonials Section -->
+        <div class="sp-testimonial-header">
+            <span class="sp-testimonial-label">TESTIMONIALS</span>
+            <h2 class="sp-testimonial-title">Don't Trust us Yet? Listen to <span
+                    class="sp-testimonial-title-highlight">our Alumni</span></h2>
+            <p class="sp-testimonial-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
+                elementum tempus hac tellus libero accumsan.</p>
+        </div>
+
+        <div class="sp-testimonial-wrapper">
+            <div class="sp-testimonial-cards">
+                <!-- Testimonial Card 1 -->
+                <div class="sp-testimonial-card">
+                    <div class="sp-testimonial-avatar">
+                        <!-- Placeholder for avatar -->
+                        <img src="./assets/man.jpg" style="height: 100%;">
+                    </div>
+                    <p class="sp-testimonial-quote">"Easy to Understand"</p>
+                    <p class="sp-testimonial-text">The platform has a clean and intuitive UI, making<br> speaking
+                        practice
+                        seamless and effective. Its<br> user-friendly design ensures a smooth<br> experience, helping
+                        users
+                        improve their fluency<br> and confidence. The structured approach<br> enhances practice
+                        sessions, making
+                        them more<br> engaging and productive.</p>
+                    <p class="sp-testimonial-name">Amey Patil</p>
+                    <p class="sp-testimonial-role">MBA Student at SP Jain</p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="sp-testimonial-card">
+                    <div class="sp-testimonial-avatar">
+                        <!-- Placeholder for avatar -->
+                        <img src="./assets/man.jpg" style="height: 100%;">
+                    </div>
+                    <p class="sp-testimonial-quote">"Easy to Understand"</p>
+                    <p class="sp-testimonial-text">The platform has a clean and intuitive UI, making<br> speaking
+                        practice
+                        seamless and effective. Its<br> user-friendly design ensures a smooth<br> experience, helping
+                        users
+                        improve their fluency<br> and confidence. The structured approach<br> enhances practice
+                        sessions, making
+                        them more<br> engaging and productive.</p>
+                    <p class="sp-testimonial-name">Amey Patil</p>
+                    <p class="sp-testimonial-role">MBA Student at SP Jain</p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="sp-testimonial-card">
+                    <div class="sp-testimonial-avatar">
+                        <!-- Placeholder for avatar -->
+                        <img src="./assets/man.jpg" style="height: 100%;">
+                    </div>
+                    <p class="sp-testimonial-quote">"Easy to Understand"</p>
+                    <p class="sp-testimonial-text">The platform has a clean and intuitive UI, making<br> speaking
+                        practice
+                        seamless and effective. Its<br> user-friendly design ensures a smooth<br> experience, helping
+                        users
+                        improve their fluency<br> and confidence. The structured approach<br> enhances practice
+                        sessions, making
+                        them more<br> engaging and productive.</p>
+                    <p class="sp-testimonial-name">Amey Patil</p>
+                    <p class="sp-testimonial-role">MBA Student at SP Jain</p>
+                </div>
+            </div>
+
+            <div class="sp-testimonial-arrow"></div>
+        </div>
+
+        
+    </div>
+    <!-- FAQ Section -->
+    <div class="sp-faq-section">
+        <div class="sp-faq-header">
+            <span class="sp-faq-label">FAQ's</span>
+            <h2 class="sp-faq-title">Have Any Doubts? Refer to Questions</h2>
+        </div>
+
+        <div class="sp-faq-accordion">
+            <!-- FAQ Item 1 -->
+            <div class="sp-faq-item">
+                <div class="sp-faq-question">How are the courses conducted?</div>
+                <div class="sp-faq-answer">100% online with live + recorded sessions.</div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="sp-faq-item">
+                <div class="sp-faq-question">How are the courses conducted?</div>
+                <div class="sp-faq-answer">100% online with live + recorded sessions.</div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="sp-faq-item">
+                <div class="sp-faq-question">How are the courses conducted?</div>
+                <div class="sp-faq-answer">100% online with live + recorded sessions.</div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="sp-faq-item">
+                <div class="sp-faq-question">How are the courses conducted?</div>
+                <div class="sp-faq-answer">100% online with live + recorded sessions.</div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="sp-faq-item">
+                <div class="sp-faq-question">How are the courses conducted?</div>
+                <div class="sp-faq-answer">100% online with live + recorded sessions.</div>
+            </div>
+        </div>
+    </div>
+    <div class="gs-container">
+        <!-- Hero Banner Section -->
+        <div class="gs-hero-banner">
+            <!-- <div class="hero-banner-img">
+                <img src="./assets/Image_CTA.jpg" alt="cta-img">
+            </div> -->
+            <div class="gs-hero-content">
+                <span class="gs-hero-label">PICK THE RIGHT COURSE FOR YOU</span>
+                <h1 class="gs-hero-title">The Next Chapter Needs You</h1>
+                <p class="gs-hero-text">We've built the tools. Designed the journey. Now it's your turn to step in, get
+                    skilled, and create your future.</p>
+                <a href="#" class="gs-hero-cta">
+                    Start Learning Now
+                    <span class="gs-hero-cta-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+              <div class="footer-column brand">
+                <h2>Get<span class="highlight">Skilled</span></h2>
+                <p>Empowering learners through<br>innovation and practical knowledge.</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+          
+              <div class="footer-column">
+                <h4>Our Domains</h4>
+                <ul>
+                  <li><a href="#"> Technology</a></li>
+                  <li><a href="">Commerce</a></li>
+                  <li><a href="">Engineering</a></li>
+                  <li><a href="">Arts</a></li>
+                </ul>
+              </div>
+          
+              <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Programs</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Careers</a></li>
+                </ul>
+              </div>
+          
+              <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="">AI Interview Prep</a></li>
+                  <li><a href="">AI Based Program Selector</a></li>
+                  <li><a href="">AI Based Course Creator</a></li>
+                  <li><a href="">AI Based Book GPT</a></li>
+                  <li><a href="">Community </a><span class="badge">Exclusive</span></li>
+                </ul>
+              </div>
+          
+              <div class="footer-column contact-card">
+                <ul>
+                    <div class="list-item">
+                    <i class="fas fa-envelope"></i> <li> gyaankool@gmail.com</li>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-phone"></i><li> +91 95910 09606</li>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-map-marker-alt"></i><li> 123 Innovation Hub, Tech Park,       Bangalore, Karnataka
+                        560001</li>
+                    </div>
+                </ul>
+              </div>
+            </div>
+          
+            <hr>
+            
+            <div class="footer-bottom">
+              <p>Copyright © 2025 GetSkilled |
+                <a href="#">All Rights Reserved</a> |
+                <a href="#">Terms and Conditions</a> |
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </footer>
+    </div>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

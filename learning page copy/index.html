@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">Get<span>Skilled</span></div>
+
+            </div>
+            <div class="profile">
+
+                <img src="profilepic.png" alt="Profile" id="profileBtn">
+                <div class="dropdown" id="profileDropdown">
+                    <div class="profile-info">
+                        <div class="profile-photo"><img src="profilepic.png" alt="Profile"></div>
+                        <div class="profile-right">
+                            <p>Vanshika Kandya </p>
+                            <a href="#">View Profile <img src="arrow-circle.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="drop-down-content">
+                        <div class="content-left"><img src="settings.svg" alt=""></div>
+                        <div class="content-right"><a href="#">Settings</a></div>
+                    </div>
+
+                    <div class="drop-down-content lpgout">
+                        <div class="content-left"><img src="logout.png" alt=""></div>
+                        <div class="content-right"><a href="#">Logout</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="dashboard-header">
+        <a href="#" class="back-link">← Back to main dashboard</a>
+        <div class="code-toolbar">
+            <select>
+                <option selected>Java (SE1.8)</option>
+                <option selected>Java (SE1.8)</option>
+                <option selected>Java (SE1.8)</option>
+                <option selected>Java (SE1.8)</option>
+
+            </select>
+            <span class="file-tab">main.java</span>
+            <span class="output-tab">Output</span>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+    </div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="chapter-sidebar">
+        <h3>Chapter 4: Data Types and flows</h3>
+  <p class="module-title">MODULE 3</p>
+
+  <div class="progress-box">
+    <p><strong>60% Complete</strong> <span class="score">Score 4000/5000</span></p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 60%;"></div>
+    </div>
+    <p class="due-date">Due Date is 12th July, 2025, 11:59PM</p>
+  </div>
+
+  <h4>List of Topics</h4>
+  <ul class="topics-list">
+    <li class="topic completed">
+      ✅ 📄 Understanding Data Analytics <span>(1hr 7min)</span>
+    </li>
+    <li class="topic completed">
+      ✅ 💻 Problem on “Problem Name” <span class="score">Score 100/100</span>
+    </li>
+    <li class="topic active">
+      📄 Understanding Data Analytics <span>(1hr 7min)</span>
+      <button class="resume-btn">Resume Learning</button>
+    </li>
+    <li class="topic">📄 Data Analytics</li>
+    <li class="topic">📄 Fundamentals of Data Analytics <span>(30min)</span></li>
+    <li class="topic">📄 Fundamentals of Data Analytics <span>(30min)</span></li>
+    <li class="topic">📄 Fundamentals of Data Analytics <span>(30min)</span></li>
+  </ul>
+
+  <div class="solve-box">
+    <p>💻 Solve more Questions related to the Chapter.</p>
+    <a href="#" class="solve-link">Solve Questions →</a>
+  </div>
+    </aside>
+
+    <main class="container">
+        <section class="left-panel">
+            <div class="tabs">
+              <button class="tab-button active" data-tab="problem">Problem</button>
+              <button class="tab-button" data-tab="submissions">Submissions</button>
+              <button class="tab-button" data-tab="hints">Hints & Solutions</button>
+            </div>
+          
+            <div class="tab-content" id="problem">
+                <div class="problem-header">
+                    <h3>Remove Duplicates</h3>
+                    <p class="meta">Easy • Average time to solve is 20 min • Score 0/80</p>
+                  </div>
+                
+                  <div class="problem-section">
+                    <h4>Problem Statement</h4>
+                    <p>Given a string S, remove consecutive duplicates from it recursively.</p>
+                  </div>
+                
+                  <div class="problem-section">
+                    <h4>Detailed explanation (Input/output format, Notes, Images)</h4>
+                    <p><strong>Input Format:</strong> String S</p>
+                    <p><strong>Output Format:</strong> Output String</p>
+                  </div>
+                
+                  <div class="problem-section">
+                    <h4>Constraints:</h4>
+                    <p>1 &lt;= |S| &lt;= 10<sup>3</sup><br>where |S| represents the length of string</p>
+                  </div>
+                
+                  <div class="problem-section io-section">
+                    <p><strong>Sample Input 1 :</strong><br>aabccba</p>
+                    <p><strong>Sample Output 1 :</strong><br>abcba</p>
+                
+                    <p><strong>Sample Input 2 :</strong><br>xxxyyyzwvzzz</p>
+                    <p><strong>Sample Output 2 :</strong><br>xyzwz</p>
+                  </div>
+            </div>
+            <div class="tab-content" id="submissions" style="display:none;"><table class="submission-table">
+                <thead>
+                  <tr>
+                    <th>Status</th>
+                    <th>Test Cases</th>
+                    <th>Score</th>
+                    <th>Language</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="status-icon">✔</span></td>
+                    <td>50/50</td>
+                    <td>80</td>
+                    <td>Java (SE 1.8)</td>
+                  </tr>
+                  <tr>
+                    <td><span class="status-icon">✔</span></td>
+                    <td>50/50</td>
+                    <td>80</td>
+                    <td>Java (SE 1.8)</td>
+                  </tr>
+                </tbody>
+              </table> </div>
+            <div class="tab-content" id="hints" style="display:none;"> <div class="video-container">
+                <img src="video.png" alt="Video thumbnail" />
+                
+              </div>
+              <div class="hint-text">
+                <h4>Hint explanation</h4>
+                <p><strong>Input Format:</strong> String S</p>
+                <p><strong>Output Format:</strong> Output String</p>
+                <p><strong>Output Format:</strong> Output String</p>
+              </div></div>
+          </section>
+          
+        <!-- <section class="left-panel">
+            <div class="tabs">
+                
+                <button class="tab-button" data-tab="problem">Problem</button>
+                <button class="tab-button active" data-tab="submissions">Submissions</button>
+                <button class="tab-button " data-tab="hints">Hints & Solutions</button>
+              </div>
+              
+             
+              
+              <div class="tab-content" id="problem" style="display:none;">
+               
+              </div>
+              
+              <div class="tab-content" id="submissions" style="display:none;">
+                <table class="submission-table">
+                    <thead>
+                      <tr>
+                        <th>Status</th>
+                        <th>Test Cases</th>
+                        <th>Score</th>
+                        <th>Language</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="status-icon">✔</span></td>
+                        <td>50/50</td>
+                        <td>80</td>
+                        <td>Java (SE 1.8)</td>
+                      </tr>
+                      <tr>
+                        <td><span class="status-icon">✔</span></td>
+                        <td>50/50</td>
+                        <td>80</td>
+                        <td>Java (SE 1.8)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="tab-content" id="hints">
+                <div class="video-container">
+                  <img src="video.png" alt="Video thumbnail" />
+                  
+                </div>
+                <div class="hint-text">
+                  <h4>Hint explanation</h4>
+                  <p><strong>Input Format:</strong> String S</p>
+                  <p><strong>Output Format:</strong> Output String</p>
+                  <p><strong>Output Format:</strong> Output String</p>
+                </div>
+              </div>
+              
+        </section> -->
+
+        <section class="right-panel">
+            <div class="code-editor">
+                
+                  <img src="code.svg" alt="">        
+            </div>
+
+           
+
+            
+        </section>
+       
+    </main>
+    <div class="btn-container"> 
+        <div>
+        <a href="../learning page/index.html"><button class="prev-button">Prev</button></a>
+    </div>
+    <div>
+    <a href="../learning page copy 2/index.html">
+        <button class="next-button">Next</button> 
+    </div></a>
+</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

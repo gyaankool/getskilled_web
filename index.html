@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetSkilled</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Lorem ipsum dolor sit amet consectetur. Massa aliquam sed sed accumsan ac dolor. <a href="#"
+            class="banner-link">Subscribe</a> →
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Get<span>Skilled</span></div>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#">Home</a>
+                <a href="AboutUs/index.html">About</a>
+
+                <div class="dropdown dropdown-small">
+                    <a href="#" class="dropdown-toggle">
+                        Programs <i class=""><img src="assets/Vector.svg" alt=""></i>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="AllPrograms/technology.html">Technology</a>
+                        <a href="AllPrograms/engineering.html">Engineering</a>
+                        <a href="AllPrograms/commerce.html">Commerce</a>
+                        <a href="AllPrograms/arts.html">Arts</a>
+                    </div>
+                </div>
+
+                <a href="AI INTERVIEW PREP/index.html">AI Interview Prep</a>
+                <a href="community/index.html">Community <span class="exclusive">Exclusive</span></a>
+
+                <div class="dropdown">
+
+                    <a href="#" class="dropdown-toggle dropdown-large">
+                        More <i class=""><img src="assets/Vector.svg" alt=""></i></a>
+
+                    <div class="dropdown-content">
+                        <a href="aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                        <a href="AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                        <a href="AI course creator/index.html">AI Course Generator</a>
+                        <a href="aibookgpt/index.html">AI Book GPT</a>
+                    </div>
+                </div>
+
+                <a href="#footer">Contact</a>
+            </nav>
+            <a href="loginandregister/signup.html">
+                <button class="signup-btn">Sign Up</button>
+            </a>
+        </div>
+    </header>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="logo">Get<span>Skilled</span></div>
+        <div class="mobile-hamburger" onclick="toggleMobileMenu()">☰</div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="AboutUs/index.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobilePrograms')">Programs ▾</a>
+                <div class="mobile-dropdown-content" id="mobilePrograms">
+                    <a href="AllPrograms/technology.html">Technology</a>
+                    <a href="AllPrograms/engineering.html">Engineering</a>
+                    <a href="AllPrograms/commerce.html">Commerce</a>
+                    <a href="AllPrograms/arts">Arts</a>
+                </div>
+            </li>
+            <li><a href="AI INTERVIEW PREP/index.html">AI Interview Prep</a></li>
+            <li><a href="community/index.html">Community</a> <span class="mobile-premium">Premium</span></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobileMore')">More ▾</a>
+                <div class="mobile-dropdown-content" id="mobileMore">
+                    <a href="aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                    <a href="AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                    <a href="AI course creator/index.html">AI Course Creator</a>
+                    <a href="aibookgpt/index.html">AI Book GPT</a>
+                </div>
+            </li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="main-content">
+            <!-- Left Content -->
+            <div class="main-left">
+                <div class="main-left-content">
+                    <h1 class="main-title">Discover the Perfect Course with Smart Guidance</h1>
+                    <p class="main-description">Explore diverse courses while AI-powered tools like the Roadmap
+                        Generator and Course Creator help you choose the right path—personalized to your goals!</p>
+
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Courses..." class="search-input">
+                        <button class="search-btn">
+                            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="popular-searches">
+                    <span class="popular-searches-title">Popular Searches</span>
+                    <div class="popular-searches-buttons">
+                        <button class="search-tag">
+                            <svg class="tag-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            Engineering
+                        </button>
+                        <button class="search-tag">
+                            <svg class="tag-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            STEM
+                        </button>
+                        <button class="search-tag">
+                            <svg class="tag-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            Commerce
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Popular Searches -->
+
+            </div>
+
+            <!-- Right Content (Image and Quote) -->
+            <div class="main-right">
+                <div class="carousel-container">
+
+                    <!-- Carousel Slides -->
+                    <div class="carousel-slide active">
+                        <img src="assets/person1.jpg" alt="Person 1" class="carousel-image">
+                        <div class="carousel-quote">
+                            <p class="quote-text">"Lorem ipsum dolor sit amet consectetur adipiscing elit mattis it
+                                pharellus mollit si aliquam sit nullam neque."</p>
+                            <p class="quote-author">— Rohit Sharma</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/person2.jpg" alt="Person 2" class="carousel-image">
+                        <div class="carousel-quote">
+                            <p class="quote-text">"Dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua."</p>
+                            <p class="quote-author">— Priya Singh</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/person3.jpg" alt="Person 3" class="carousel-image">
+                        <div class="carousel-quote">
+                            <p class="quote-text">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat."</p>
+                            <p class="quote-author">— Anil Kumar</p>
+                        </div>
+                    </div>
+                    <!-- Navigation Bars -->
+                    <div class="carousel-nav">
+                        <span class="carousel-bar active" data-index="0"></span>
+                        <span class="carousel-bar" data-index="1"></span>
+                        <span class="carousel-bar" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="partners-section">
+            <div class="partners-content">
+                <div class="partner-right">
+                    <h2 class="partners-title">Our Partners</h2>
+                    <p class="partners-description">Get guidance from the best alum of these institutions</p>
+                </div>
+
+                <div class="partners-logos">
+                    <img src="Partners/IITropar.svg" alt="Partner 1" class="partner-logo">
+                    <img src="Partners/IITdelhi.svg" alt="Partner 2" class="partner-logo">
+                    <img src="Partners/Kotak_Mahindra_Bank_logo 1.svg" alt="Partner 5" class="partner-logo">
+                    <img src="Partners/IITbombay.svg" alt="Partner 3" class="partner-logo">
+
+                    <img src="Partners/stanford-university-logo-97C549CD89-seeklogo.com 1.svg" alt="Partner 5"
+                        class="partner-logo">
+                    <img src="Partners/Boston-Consulting-Group-Logo-Vector.svg- 1.svg" alt="Partner 4"
+                        class="partner-logo boston">
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <!-- Bestselling Programs Section -->
+    <section class="programs-section">
+        <div class="programs-content">
+            <div class="programs-header">
+                <span class="programs-badge">OUR PROGRAMS</span>
+                <h2 class="programs-title">Choose from our Top 3 <span class="gradient-text">Bestselling Programs</span>
+                </h2>
+                <p class="programs-description">Learn from the best! Explore our top-rated programs, trusted by
+                    thousands to build in-demand skills and accelerate your career.</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="tech">Tech</button>
+                <button class="category-tab" data-category="engineering">Engineering</button>
+                <button class="category-tab" data-category="commerce">Commerce</button>
+                <button class="category-tab" data-category="arts">Arts</button>
+            </div>
+            <div class="card-scroll-container">
+                <!-- Program Cards -->
+                <div class="program-cards">
+                    <!-- Card 1 -->
+                    <div class="program-card">
+                        <img src="assets/Course card.jpg" alt="Course" class="card-image">
+                        <h3 class="card-title">Course Name</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur </p>
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <img src="assets/clock.svg" class="detail-icon" alt="">
+                                12 weeks
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/certificate.svg" class="detail-icon" alt="">
+                                Certification Course
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/money.svg" class="detail-icon" alt="">
+                                ₹20,000 <span class="detail-discount">₹25,000</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="card-btn primary">Syllabus →</a>
+                            <a href="./course detail page/index.html" class="card-btn secondary">View Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="program-card">
+                        <img src="assets/Course card.jpg" alt="Course" class="card-image">
+                        <h3 class="card-title">Course Name</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur /p>
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <img src="assets/clock.svg" class="detail-icon" alt="">
+                                12 weeks
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/certificate.svg" class="detail-icon" alt="">
+                                Certification Course
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/money.svg" class="detail-icon" alt="">
+                                ₹20,000 <span class="detail-discount">₹25,000</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="card-btn primary">Syllabus →</a>
+                            <a href="course detail page/index.html" class="card-btn secondary">View Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="program-card">
+                        <img src="assets/Course card.jpg" alt="Course" class="card-image">
+                        <h3 class="card-title">Course Name</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur </p>
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <img src="assets/clock.svg" class="detail-icon" alt="">
+                                12 weeks
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/certificate.svg" class="detail-icon" alt="">
+                                Certification Course
+                            </div>
+                            <div class="detail-item">
+                                <img src="assets/money.svg" class="detail-icon" alt="">
+                                ₹20,000 <span class="detail-discount">₹25,000</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="card-btn primary">Syllabus →</a>
+                            <a href="course detail page/index.html" class="card-btn secondary">View Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="explore-all-button">Explore All →</button>
+        </div>
+    </section>
+
+    <!-- Range of Programs Section -->
+    <section class="domains-section">
+        <div class="domains-content">
+            <div class="domains-header">
+                <span class="domains-badge">OUR DOMAINS</span>
+                <h2 class="domains-title">Choose from a <span class="gradient-text">Range of Programs</span></h2>
+                <p class="domains-description">Explore diverse programs across various domains and find the one that
+                    aligns with your goals and interests!</p>
+            </div>
+
+            <!-- Domain Cards -->
+            <div class="domain-cards">
+                <!-- Technology Card -->
+                 <a href="AllPrograms/technology.html">
+                <div class="domain-card">
+                    <img src="assets/Technology.jpg" alt="Technology" class="domain-image default">
+                    <img src="assets/Course card.jpg" alt="Technology Hover" class="domain-image hover">
+                    <div class="domain-overlay">
+                        <h3 class="domain-title">Technology</h3>
+                    </div>
+                </div>
+            </a>
+<a href="AllPrograms/engineering.html">
+                <!-- Engineering Card -->
+                <div class="domain-card">
+                    <img src="assets/engineering.jpg" alt="Engineering" class="domain-image default">
+                    <img src="assets/Course card.jpg" alt="Engineering Hover" class="domain-image hover">
+                    <div class="domain-overlay">
+                        <h3 class="domain-title">Engineering</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="AllPrograms/commerce.html">
+                <!-- Commerce Card -->
+                <div class="domain-card">
+                    <img src="assets/Commerce.jpg" alt="Commerce" class="domain-image default">
+                    <img src="assets/Course card.jpg" alt="Commerce Hover" class="domain-image hover">
+                    <div class="domain-overlay">
+                        <h3 class="domain-title">Commerce</h3>
+                    </div>
+                </div>
+            </a>
+
+                <!-- Arts Card -->
+                 <a href="AllPrograms/arts.html">
+                <div class="domain-card">
+                    <img src="assets/arts.jpg" alt="Arts" class="domain-image default">
+                    <img src="assets/Course card.jpg" alt="Arts Hover" class="domain-image hover">
+                    <div class="domain-overlay">
+                        <h3 class="domain-title">Arts</h3>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Program Selector-->
+    <div class="selector-card">
+        <div class="selector-content">
+            <span class="selector-badge">AI PROGRAM SELECTOR</span>
+            <h1>Not sure which program to choose?</h1>
+            <p>Answer a few questions, and let AI match you with the perfect course based on your interests, skills, and
+                goals!</p>
+           <a href="aibasedprogramselector-2/index.html"> <button >Try our AI Program Selector →</button></a>
+        </div>
+
+
+    </div>
+
+
+    <!-- How we Provide a Fairdeal -->
+    <section class="fair-deal-section">
+        <h2>How we Provide a <span class="gradient-text">Fair Deal?</span></h2>
+        <p>Gain hands-on experience with research-driven learning, real-world projects, and industry-specific
+            internships—plus AI-powered interview prep to boost your career!</p>
+
+
+        <div class="pyramid-section">
+            <!-- Your SVG pyramid here -->
+
+            <img class="pyramid-image" src="assets/pyramid.svg" alt="Pyramid" />
+
+            <!-- Point 01 (top right) -->
+            <div class="pyramid-point point-1">
+                <h4>Point 01</h4>
+                <p>Gain hands-on experience with research-driven learning, real-world projects, and industry-specific internships</p>
+            </div>
+
+            <!-- Point 02 (middle left) -->
+            <div class="pyramid-point point-2">
+                <h4>Point 02</h4>
+                <p>Gain hands-on experience with research-driven learning, real-world projects, and industry-specific internships</p>
+            </div>
+
+            <!-- Point 03 (middle right) -->
+            <div class="pyramid-point point-3">
+                <h4>Point 03</h4>
+                <p>Gain hands-on experience with research-driven learning, real-world projects</p>
+            </div>
+
+            <!-- Point 04 (bottom left) -->
+            <div class="pyramid-point point-4">
+                <h4>Point 04</h4>
+                <p>Gain hands-on experience with research-driven learning, real-world projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ai interview prep -->
+    <section class="ai-interview-section">
+        <div class="tabs">
+            <button class="tab active" data-tab="why">Why AI Interview Prep?</button>
+            <button class="tab" data-tab="how">How It Works?</button>
+        </div>
+        <span class="section-label">AI INTERVIEW PREP</span>
+        <h2> <span class="gradient-text">Crack Your Next Interview</span> with an Hour of Power Prep!</h2>
+        <p>Don’t overthink & miss career opportunities due to lack of preparation. Prepare for an interview in
+            less than a cup of cappuccino!<br> Start Preparing for the Interviews & practice unlimited times!
+        </p>
+        <div class="content">
+
+            <!-- LEFT SIDE -->
+            <div class="left-side">
+
+
+                <!-- Features Section that changes -->
+                <div class="features">
+                    <!-- WHY features -->
+                    <div class="feature-group show" id="why">
+                        <div class="feature">
+                            <div class="dot">
+                                <img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Smart AI Analysis</h4>
+                                <p>Real-time feedback on interview responses, including content, delivery, and body
+                                    language.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="dot">
+                                <img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Curated Questions</h4>
+                                <p>Practice with role-specific questions for software development, machine learning, and
+                                    more.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="dot"><img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Performance Tracking</h4>
+                                <p>Comprehensive analytics and personalized improvement tips.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HOW features -->
+                    <div class="feature-group" id="how">
+                        <div class="feature">
+                            <div class="dot">
+                                <img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Select Your Role</h4>
+                                <p>Choose from a wide range of job profiles to get custom questions.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="dot">
+                                <img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Instant AI Mock</h4>
+                                <p>Simulate interviews instantly and get AI feedback on your performance.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="dot">
+                                <img src="assets/dot.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Personalized Tips</h4>
+                                <p>Receive actionable tips to improve your answers, tone, and confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="primary-btn">Start Preparing Now</button>
+                    <button class="secondary-btn">Explore More →</button>
+                </div>
+            </div>
+            
+          
+
+            <!-- RIGHT SIDE -->
+            <div class="right-side" >
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card-interview active-slide" id="testimonial-card">
+                      <img class="quotes" src="assets/quotes.svg" alt="">
+                      <h4 id="testimonial-title">Easy to Understand</h4>
+                      <p class="detail" id="testimonial-text">The platform has a clean and intuitive UI, making speaking practice seamless and effective. Its user-friendly design ensures a smooth experience, helping users improve their fluency and confidence. The structured approach enhances practice sessions, making them more engaging and productive.</p>
+                      <div class="testimonial-user">
+                        <img id="testimonial-image" src="assets/person1.jpg" alt="User Photo">
+                        <div>
+                          <span id="testimonial-name">Amey Patil</span>
+                          <p id="testimonial-role">MBA Student at SP Jain</p>
+                        </div>
+                      </div>
+                    </div>
+                <!-- Optional: fake slider navigation (dots + arrows) -->
+                <div class="slider-navigation">
+                    <div class="dots">
+                        <div class="dot active" id="dot"></div>
+                        <div class="dot" id="dot"></div>
+                        <div class="dot" id="dot"></div>
+                    </div>
+                    <div class="arrows">
+                        <img src="assets/right-arrrow.svg" id="prev-arrow" alt="">
+                        <img src="assets/left_arrow.svg" id="next-arrow" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- faculty section -->
+    <section class="faculty-section">
+        <div class="tag">Our Faculty</div>
+        <h2>You will <span class="highlight">Learn from the best</span></h2>
+        <p class="section-description">Our curriculum is not designed in a boardroom. It's crafted by real
+            educators, researchers, and industry leaders who know what today's world demands.</p>
+
+        <div class="faculty-container">
+            <div class="facultycarousel" id="faculty-carousel">
+                <!-- Faculty Card 1 -->
+                <div class="faculty-card">
+                    <div class="card-image">
+                        <!-- Placeholder for faculty image -->
+                        <div
+                            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                            <img src="./assets/vivek_narayan.png" style="height: 100%; width:100%">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="faculty-name">
+                            Vivek Narayan
+                            <a href="#" class="linkedin-icon">in</a>
+                        </div>
+                        <div class="university">IIT BHU and IIM-Calcutta</div>
+                        <p class="experience">Over 30 years of Corporate Research & Academic Experience</p>
+                    </div>
+                </div>
+
+                <!-- Faculty Card 2 -->
+                <div class="faculty-card">
+                    <div class="card-image">
+                        <!-- Placeholder for faculty image -->
+                        <div
+                            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                            <img src="./assets/Aman_singh.png" style="height: 100%; width:100%">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="faculty-name">
+                            Aman Singh
+                            <a href="#" class="linkedin-icon">in</a>
+                        </div>
+                        <div class="university">IIT Delhi</div>
+                        <p class="experience">Tech @ SkyBox. Ex-founder of SayF. Expanded the business to achieve an
+                            annual GMV of 150 crore</p>
+                    </div>
+                </div>
+
+                <!-- Faculty Card 3 -->
+                <div class="faculty-card">
+                    <div class="card-image">
+                        <!-- Placeholder for faculty image -->
+                        <div
+                            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                            <img src="./assets/paras_gupta.png" style="height: 100%; width:100%">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="faculty-name">
+                            Paras Gupta
+                            <a href="#" class="linkedin-icon">in</a>
+                        </div>
+                        <div class="university">Stanford and IIT Delhi</div>
+                        <p class="experience">Founder @ Yelox Payments</p>
+                    </div>
+                </div>
+
+                <!-- Faculty Card 4 -->
+                <div class="faculty-card">
+                    <div class="card-image">
+                        <!-- Placeholder for faculty image -->
+                        <div
+                            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #888;">
+                            <img src="./assets/lokap_sahu.png" style="height: 100%; width:100%">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="faculty-name">
+                            Lokap Sahu
+                            <a href="#" class="linkedin-icon">in</a>
+                        </div>
+                        <div class="university">IIT Bombay</div>
+                        <p class="experience">Founder @ Inquiply. Raised $180M. Backed by Titan Capital</p>
+                    </div>
+                </div>
+
+                <!-- Additional Faculty Cards can be added here -->
+            </div>
+
+            <!-- <div class="faculty-carousel-nav">
+                <button class="nav-button" id="prev-btn">&lt;</button>
+                <button class="nav-button" id="next-btn"><img src="./assets/left_arrow.svg"></button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Result section -->
+    <section class="results-section">
+        <div class="results-header">
+            <h2 class="results-title">Our Results <span class="highlight">in Numbers</span></h2>
+            <p class="results-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero
+                accumsan.
+            </p>
+        </div>
+
+        <div class="results-stats">
+            <div class="stat">
+                <h3 class="stat-number"><span class="highlight">95</span>%</h3>
+                <p class="stat-label">Success Rate</p>
+            </div>
+
+            <div class="stat">
+                <h3 class="stat-number"><span class="highlight">50</span>+</h3>
+                <p class="stat-label">Industry Partners</p>
+            </div>
+
+            <div class="stat">
+                <h3 class="stat-number"><span class="highlight">100</span>+</h3>
+                <p class="stat-label">Success Stories</p>
+            </div>
+
+            <div class="stat">
+                <h3 class="stat-number"><span class="highlight">10k</span>+</h3>
+                <p class="stat-label">Interview Prep Users</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <span class="testimonial-subtitle">TESTIMONIALS</span>
+            <h2 class="testimonial-title">
+                Don’t Trust us Yet? Listen to <span class="highlight">our Alumni</span>
+            </h2>
+            <p class="testimonial-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero
+                accumsan.
+            </p>
+        </div>
+
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img src="assets/person1.jpg" alt="Amey Patil" class="testimonial-photo" />
+                <h3 class="testimonial-quote">“Easy to Understand”</h3>
+                <p class="testimonial-text">
+                    The platform has a clean and intuitive UI, making speaking practice seamless and effective. Its
+                    user-friendly design ensures a smooth experience, helping users improve their fluency and
+                    confidence. The structured approach enhances practice sessions, making them more engaging and
+                    productive.
+                </p>
+                <p class="testimonial-name">Amey Patil</p>
+                <p class="testimonial-school">MBA Student at SP Jain</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="assets/person2.jpg" alt="Amey Patil" class="testimonial-photo" />
+                <h3 class="testimonial-quote">“Easy to Understand”</h3>
+                <p class="testimonial-text">
+                    The platform has a clean and intuitive UI, making speaking practice seamless and effective. Its
+                    user-friendly design ensures a smooth experience, helping users improve their fluency and
+                    confidence. The structured approach enhances practice sessions, making them more engaging and
+                    productive.
+                </p>
+                <p class="testimonial-name">Amey Patil</p>
+                <p class="testimonial-school">MBA Student at SP Jain</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="assets/person3.jpg" alt="Amey Patil" class="testimonial-photo" />
+                <h3 class="testimonial-quote">“Easy to Understand”</h3>
+                <p class="testimonial-text">
+                    The platform has a clean and intuitive UI, making speaking practice seamless and effective. Its
+                    user-friendly design ensures a smooth experience, helping users improve their fluency and
+                    confidence. The structured approach enhances practice sessions, making them more engaging and
+                    productive.
+                </p>
+                <p class="testimonial-name">Amey Patil</p>
+                <p class="testimonial-school">MBA Student at SP Jain</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Looking for expert guidance to <br> take your career to the next level?</h2>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Schedule a Call →</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="footer-column brand">
+                <h2>Get<span class="highlight">Skilled</span></h2>
+                <p>Empowering learners through<br>innovation and practical knowledge.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Our Domains</h4>
+                <ul>
+                    <li><a href="#"> Technology</a></li>
+                    <li><a href="">Commerce</a></li>
+                    <li><a href="">Engineering</a></li>
+                    <li><a href="">Arts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Programs</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="">AI Interview Prep</a></li>
+                    <li><a href="">AI Based Program Selector</a></li>
+                    <li><a href="">AI Based Course Creator</a></li>
+                    <li><a href="">AI Based Book GPT</a></li>
+                    <li><a href="">Community </a><span class="badge">Exclusive</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-card">
+                <ul>
+                    <div class="list-item">
+                    <i class="fas fa-envelope"></i> <li> gyaankool@gmail.com</li>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-phone"></i><li> +91 95910 09606</li>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-map-marker-alt"></i><li> 123 Innovation Hub, Tech Park,       Bangalore, Karnataka
+                        560001</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2025 GetSkilled |
+                <a href="#">All Rights Reserved</a> |
+                <a href="#">Terms and Conditions</a> |
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+
+</body>
+
+</html>

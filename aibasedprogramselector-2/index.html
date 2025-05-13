@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetSkilled</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+      <!-- Header -->
+      <header>
+        <div class="navbar">
+            <div class="logo">Get<span>Skilled</span></div>
+  
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+  
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../AboutUs/index.html">About</a>
+  
+                <div class="dropdown dropdown-small">
+                    <a href="#" class="dropdown-toggle">
+                        Programs <i class=""><img src="assets/Vector.svg" alt=""></i>
+                    </a>
+  
+                    <div class="dropdown-content">
+                        <a href="../AllPrograms/technology.html">Technology</a>
+                        <a href="../AllPrograms/engineering.html">Engineering</a>
+                        <a href="../AllPrograms/commerce.html">Commerce</a>
+                        <a href="../AllPrograms/arts.html">Arts</a>
+                    </div>
+                </div>
+  
+                <a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a>
+                <a href="../community/index.html">Community <span class="exclusive">Exclusive</span></a>
+  
+                <div class="dropdown">
+  
+                    <a href="#" class="dropdown-toggle dropdown-large">
+                        More <i class=""><img src="assets/Vector.svg" alt=""></i></a>
+  
+                    <div class="dropdown-content">
+                        <a href="#">AI Based Program Selector</a>
+                        <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                        <a href="../AI course creator/index.html">AI Course Generator</a>
+                        <a href="../aibookgpt/index.html">AI Book GPT</a>
+                    </div>
+                </div>
+  
+                <a href="#">Contact</a>
+            </nav>
+            <a href="../loginandregister/signup.html">
+                <button class="signup-btn">Sign Up</button>
+            </a>
+        </div>
+    </header>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="logo">Get<span>Skilled</span></div>
+        <div class="mobile-hamburger" onclick="toggleMobileMenu()">☰</div>
+    </div>
+  
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../AboutUs/index.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobilePrograms')">Programs ▾</a>
+                <div class="mobile-dropdown-content" id="mobilePrograms">
+                    <a href="../AllPrograms/technology.html">Technology</a>
+                    <a href="../AllPrograms/engineering.html">Engineering</a>
+                    <a href="../AllPrograms/commerce.html">Commerce</a>
+                    <a href="../AllPrograms/arts.html">Arts</a>
+                </div>
+            </li>
+            <li><a href="../AI INTERVIEW PREP/index.html">AI Interview Prep</a></li>
+            <li><a href="../community/index.html">Community</a> <span class="mobile-premium">Premium</span></li>
+            <li class="mobile-dropdown">
+                <a href="#" onclick="toggleMobileDropdown(event, 'mobileMore')">More ▾</a>
+                <div class="mobile-dropdown-content" id="mobileMore">
+                    <a href="../aibasedprogramselector-2/index.html">AI Based Program Selector</a>
+                    <a href="../AiRoadmapGenerator/index.html">AI Roadmap Generator</a>
+                    <a href="../AI course creator/index.html">AI Course Creator</a>
+                    <a href="../aibookgpt/index.html">AI Book GPT</a>
+                </div>
+            </li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+      <!-- Mobile Header -->
+  <!-- Desktop Header -->
+  <div class="container-wrapper">
+   
+
+   
+
+    
+    <div class="container">
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-text">
+          <span id="current-question">1</span>/
+          <span id="total-questions">10</span> Questions
+        </div>
+        <div class="progress-bar-container" id="progress-bar">
+          <!-- Progress segments will be added here dynamically -->
+        </div>
+        <div class="quiz-intro" id="intro-text">
+          Your journey starts here! Let's find the perfect course for you
+        </div>
+      </div>
+
+      <!-- Questions will be shown one at a time -->
+      <div id="quiz-container">
+        <!-- Questions will be added here dynamically -->
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="button-container">
+        <div>
+          <button id="prev-button" class="btn btn-secondary" style="display: none">
+            Previous
+          </button>
+        </div>
+        <button id="next-button" class="btn btn-primary">
+          Next
+          <span class="btn-icon">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Loader section -->
+  <div id="loader-overlay" class="hidden">
+    <div class="loader-container">
+      <div class="loader"></div>
+
+      <h2>Your customized book is on its way!</h2>
+      <p>
+        We’re curating top PDFs, videos, and guides into a customized book PDF
+        to make learning seamless for you. <br />
+        Just a few more seconds!
+      </p>
+    </div>
+  </div>
+
+  <!-- next section -->
+  <setion id="next-section">
+    <div class="next-container">
+      <div class="main-content">
+        <section>
+          <div class="banner">
+            <div class="banner-content">
+              <div class="banner-logo">Get<span>Skilled</span></div>
+              <h2>Your Personalized Course Path is Ready!</h2>
+              <p>
+                Looks like you're interested in Data Science in the Technology
+                Domain. Explore these courses
+              </p>
+            </div>
+            <div class="banner-image">
+              <!-- Animated figure illustration would go here -->
+              <img src="./assets/Illustration.svg" class="banner-img" />
+            </div>
+          </div>
+          <div>
+            <h2 class="section-title">Our Recommended Courses</h2>
+            <p class="section-subtitle">
+              We found the best courses to match your skills and interests!
+              Pick one and start learning.
+            </p>
+          </div>
+
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-image">
+                <img src="./assets/image.jpg" style="height: 100%; width: 100%" />
+                <span class="course-category">Technology</span>
+              </div>
+              <div class="course-content">
+                <div class="course-info">
+                  <h3 class="course-title">Course Name</h3>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.
+                  </p>
+                  <div class="course-meta">
+                    <span class="meta-item">
+                      <span class="meta-icon"><img src="./assets/clock.png" /></span>
+                      12 weeks
+                    </span>
+                    <span class="meta-item">
+                      <span class="meta-icon"><img src="./assets/cap.png" /></span>
+                      Certification Course
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary view-program-btn">View Program</a>
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-image">
+                <img src="./assets/image.jpg" style="height: 100%; width: 100%" />
+                <span class="course-category">Technology</span>
+              </div>
+              <div class="course-content">
+                <div class="course-info">
+                  <h3 class="course-title">Course Name</h3>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.
+                  </p>
+                  <div class="course-meta">
+                    <span class="meta-item">
+                      <span class="meta-icon"><img src="./assets/clock.png" /></span>
+                      12 weeks
+                    </span>
+                    <span class="meta-item">
+                      <span class="meta-icon"><img src="./assets/cap.png" /></span>
+                      Certification Course
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary view-program-btn">View Program</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mobile Only Accordions -->
+        <div class="mobile-only">
+          <section class="potential-section">
+            <h2 class="potential-title">
+              Your Learning Potential is Limitless! 🚀
+            </h2>
+            <p class="potential-description">
+              While we don't have an exact course match right now, that just
+              means your learning journey deserves something even better— your
+              own <span class="highlight">AI-powered roadmap!</span>
+            </p>
+
+            <p class="section-subtitle">
+              Here's the strengths we discovered about you:
+            </p>
+
+            <div class="strength-tags">
+              <div class="strength-tag">
+                <div class="tag-icon">
+                  <img src="./assets/dark_crown.png" />
+                </div>
+                <p>Logical Thinking</p>
+              </div>
+              <div class="strength-tag">
+                <div class="tag-icon">
+                  <img src="./assets/dark_crown.png" />
+                </div>
+                <p>AI-driven applications</p>
+              </div>
+              <div class="strength-tag">
+                <div class="tag-icon">
+                  <img src="./assets//dark_crown.png" />
+                </div>
+                <p>Research</p>
+              </div>
+            </div>
+
+            <p class="section-subtitle">
+              Let's craft a step-by-step learning path tailored just for you.
+            </p>
+
+            <a href="#" class="btn btn-primary-dark">Build My AI Roadmap →</a>
+          </section>
+          <div class="accordion" id="responses-accordion">
+            <div class="accordion-header">
+              Your Responses at a Glance
+              <span class="accordion-icon"><img src="./assets/Arrow down.svg" /></span>
+            </div>
+            <div class="accordion-body">
+              <p class="responses-subtitle">
+                Here are your answers to the set of questions asked.
+              </p>
+              <div class="response-list">
+                <div class="response-item">
+                  <div class="response-number">1</div>
+                  <div class="response-content">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?. Nsic ahamad jist bist le.
+                    </p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-number">2</div>
+                  <div class="response-content">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?. Nsic ahamad jist bist le.
+                    </p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-number">3</div>
+                  <div class="response-content">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?. Nsic ahamad jist bist le.
+                    </p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-number">4</div>
+                  <div class="response-content">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?. Nsic ahamad jist bist le.
+                    </p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-number">5</div>
+                  <div class="response-content">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                      amet nec maecenas?. Nsic ahamad jist bist le.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="insights-accordion">
+            <div class="accordion-header">
+              Your Personalized Learning Insights
+              <span class="accordion-icon"><img src="./assets/Arrow down.svg" /></span>
+            </div>
+            <div class="accordion-body-inside">
+              <div class="accordian-card-one">
+                <img src="./assets/Pie chart.svg" class="piechart-img" />
+                <div class="skills-wrapper">
+                  <div class="skill-card-header">
+                    <h2 class="skills-heading">Soft Skills</h2>
+                    <p>we have identified your key soft skills</p>
+                  </div>
+                  <div class="card-two-flex-div">
+                    <img src="./assets/Icon.svg" />
+                    <p>Skill Name 01 <span>(20%)</span></p>
+                  </div>
+                  <div class="card-two-flex-div">
+                    <img src="./assets/Icon (1).svg" />
+                    <p>Skill Name 02 <span>(30%)</span></p>
+                  </div>
+                  <div class="card-two-flex-div">
+                    <img src="./assets/Icon (2).svg" />
+                    <p>Skill Name 01 <span>(50%)</span></p>
+                  </div>
+                </div>
+              </div>
+              <!-- card-one -->
+              <div class="accordian-card-two">
+                <div>
+                  <h2>Key Strengths</h2>
+                  <p>
+                    Based on the analysis of your answer, you seem to be a
+                    Data Science Enthusiast. here are your top 3 skills
+                  </p>
+                </div>
+                <div class="card-two-divs">
+                  <div class="card-one-div">
+                    <div class="key-strength-card">
+                      <div class="strength-wrapper">
+                        <div class="strength-details">
+                          <p class="key-strength-name">Key Strength 01</p>
+                          <p>50%</p>
+                        </div>
+                        <img src="./assets/Bar.svg" />
+                      </div>
+                      <p>
+                        Lorem ipsum dolar sit amar consecutiev. Amer id quis
+                        in premti scleris le.
+                      </p>
+                    </div>
+                    <div class="key-strength-card">
+                      <div class="strength-wrapper">
+                        <div class="strength-details">
+                          <p class="key-strength-name">Key Strength 01</p>
+                          <p>50%</p>
+                        </div>
+                        <img src="./assets/Bar.svg" />
+                      </div>
+                      <p>
+                        Lorem ipsum dolar sit amar consecutiev. Amer id quis
+                        in premti scleris le.
+                      </p>
+                    </div>
+                    <div class="key-strength-card">
+                      <div class="strength-wrapper">
+                        <div class="strength-details">
+                          <p class="key-strength-name">Key Strength 01</p>
+                          <p>50%</p>
+                        </div>
+                        <img src="./assets/Bar.svg" />
+                      </div>
+                      <p>
+                        Lorem ipsum dolar sit amar consecutiev. Amer id quis
+                        in premti scleris le.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="community-section">
+            <div class="community-image">
+              <!-- Community image illustration would go here -->
+              <img src="./assets/Illustration_Community.svg" />
+            </div>
+            <div class="community-div">
+              <div class="community-badge">Exclusive</div>
+              <h3 class="community-title">
+                Every great journey starts with a right learning path. Join
+                Our Community to get exclusive benefits!
+              </h3>
+              <a href="#" class="btn btn-light">Join Community →</a>
+            </div>
+          </section>
+        </div>
+
+        <section class="personal-insights-section">
+          <div>
+            <h1>Your Personalized Learning Insights</h1>
+          </div>
+          <div class="personal-insights-cards">
+            <div class="card-one">
+              <div>
+                <h2 class="card-heading">Key Strengths</h2>
+                <p>
+                  Based on the analysis of your answer, you seem to be a Data
+                  Science Enthusiast. here are your top 3 skills
+                </p>
+              </div>
+              <div class="card-one-divs">
+                <div class="card-one-div">
+                  <div class="strength-meter">
+                    <img src="./assets/Bar.svg" />
+                    <p>50% . Key Strength 01</p>
+                  </div>
+                  <div>
+                    <h3>Key Strength 01</h3>
+                    <p>
+                      Lorem ipsum dolar sit amar consecutiev. Amer id quis in
+                      premti scleris le.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-one-div">
+                  <div class="strength-meter">
+                    <img src="./assets/Bar.svg" />
+                    <p>50% . Key Strength 01</p>
+                  </div>
+                  <div>
+                    <h3>Key Strength 01</h3>
+                    <p>
+                      Lorem ipsum dolar sit amar consecutiev. Amer id quis in
+                      premti scleris le.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-one-div">
+                  <div class="strength-meter">
+                    <img src="./assets/Bar.svg" />
+                    <p>50% . Key Strength 01</p>
+                  </div>
+                  <div>
+                    <h3>Key Strength 01</h3>
+                    <p>
+                      Lorem ipsum dolar sit amar consecutiev. Amer id quis in
+                      premti scleris le.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-two">
+              <img src="./assets/Pie chart.svg" class="piechart-img" />
+              <h2 class="skills-heading">Soft Skills</h2>
+              <p>we have identified your key soft skills</p>
+              <div class="card-two-flex-div">
+                <img src="./assets/Icon.svg" />
+                <p>Skill Name 01 <span>(20%)</span></p>
+              </div>
+              <div class="card-two-flex-div">
+                <img src="./assets/Icon (1).svg" />
+                <p>Skill Name 02 <span>(30%)</span></p>
+              </div>
+              <div class="card-two-flex-div">
+                <img src="./assets/Icon (2).svg" />
+                <p>Skill Name 01 <span>(50%)</span></p>
+              </div>
+            </div>
+          </div>
+          <section class="potential-section">
+            <div class="potential-group-one">
+              <h2 class="potential-title">
+                Your Learning Potential is Limitless! 🚀
+              </h2>
+              <p class="potential-description">
+                While we don't have an exact course match right now, that just
+                means your learning journey deserves something even better—
+                your own <span class="highlight">AI-powered roadmap!</span>
+              </p>
+            </div>
+
+            <div class="potential-group-two">
+              <p class="section-subtitle">
+                Here's the strengths we discovered about you:
+              </p>
+              <div class="strength-tags">
+                <div class="strength-tag">
+                  <div class="tag-icon">
+                    <img src="./assets//dark_crown.png" />
+                  </div>
+                  <p>Logical Thinking</p>
+                </div>
+                <div class="strength-tag">
+                  <div class="tag-icon">
+                    <img src="./assets//dark_crown.png" />
+                  </div>
+                  <p>AI-driven applications</p>
+                </div>
+                <div class="strength-tag">
+                  <div class="tag-icon">
+                    <img src="./assets//dark_crown.png" />
+                  </div>
+                  <p>Research</p>
+                </div>
+              </div>
+              <p class="section-subtitle">
+                Let's craft a step-by-step learning path tailored just for
+                you.
+              </p>
+            </div>
+
+            <a href="#" class="btn btn-primary-dark">Build My AI Roadmap →</a>
+          </section>
+        </section>
+      </div>
+
+      <div class="sidebar desktop-only">
+        <section class="responses-section">
+          <h2 class="responses-title">Your Responses at a Glance!</h2>
+          <p class="responses-subtitle">
+            Here are your answers to the set of questions asked.
+          </p>
+
+          <div class="response-list">
+            <label for="response-1">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">1</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-1" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-2">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">2</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-2" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-3">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">3</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-3" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-4">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">4</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-4" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-5">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">5</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-5" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-6">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">6</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-6" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-7">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">7</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-7" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-8">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">8</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-8" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-9">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">9</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-9" class="response" />
+                </div>
+              </div>
+            </label>
+            <label for="response-10">
+              <div class="response-content">
+                <div class="response-question">
+                  <div class="response-number">10</div>
+                  <div class="response-question-text">
+                    Lorem ipsum dolor sit amet consectetur. Sed vestibulum
+                    amet nec maecenas?
+                  </div>
+                </div>
+                <div class="response-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                  <input type="checkbox" style="display: none" id="response-10" class="response" />
+                </div>
+              </div>
+            </label>
+          </div>
+        </section>
+        <section class="community-section">
+          <div class="community-image">
+            <!-- Community image illustration would go here -->
+            <img src="./assets/Illustration_Community.svg" />
+          </div>
+          <div class="community-div">
+            <div class="community-badge">Exclusive</div>
+            <h3 class="community-title">
+              Every great journey starts with a right learning path. Join Our
+              Community to get exclusive benefits!
+            </h3>
+            <a href="#" class="btn btn-light">Join Community →</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </setion>
+  <script src="./script.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

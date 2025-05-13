@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetSkilled Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">Get<span>Skilled</span></div>
+            <ul class="nav-links">
+                <li><a href="#">AI Interview Prep </a><img src="arrow.svg" alt=""></li>
+                <li><a href="#">Community </a><img src="arrow.svg" alt=""></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="info.svg" alt="">
+            <img src="notif.svg" alt="">
+            <img src="profilepic.png" alt="Profile" id="profileBtn">
+            <div class="dropdown" id="profileDropdown">
+                <div class="profile-info">
+                    <div class="profile-photo"><img src="profilepic.png" alt="Profile"></div>
+                    <div class="profile-right">
+                        <p>Vanshika Kandya </p>
+                        <a href="#">View Profile <img src="arrow-circle.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="drop-down-content">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right"><a href="#">Settings</a></div>
+                </div>
+               
+                <div class="drop-down-content lpgout">
+                    <div class="content-left"><img src="logout.png" alt=""></div>
+                    <div class="content-right"><a href="#">Logout</a></div>
+                </div >
+                
+            </div>
+            <div class="dropdown-phone" id="profileDropdown-phone">
+                <div class="profile-info">
+                    <div class="profile-photo"><img src="profilepic.png" alt="Profile"></div>
+                    <div class="profile-right">
+                        <p>Vanshika Kandya </p>
+                        <a href="#">View Profile <img src="arrow-circle.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn" data-target="progressContent">Bookmarks</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right nav-tab-btn" id="openSettingsBtn">Doubts</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">My courses</div>
+                </div>
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">About GetSkilled</div>
+                </div>
+
+                <div class="drop-down-content settings-icon">
+                    <div class="content-left"><img src="settings.svg" alt=""></div>
+                    <div class="content-right " id="openSettingsBtn">Notification Preferences</div>
+                </div>
+                <div class="drop-down-content lpgout">
+                    <div class="content-left"><img src="logout.png" alt=""></div>
+                    <div class="content-right">Logout</a></div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <section class="left">
+            <h2>Enrolled Programs <span class="count">2</span></h2>
+
+            <div class="program-card">
+                <div class="header-title" onclick="toggleCard(this)">
+                    <div class="program-header">
+                        <img class="icon" src="Icon 2.svg" alt="">
+                        <div>
+
+                            Combo | Data Analytics and AI<br>
+                            <span class="desc">End Date: 8th June, 2025</span>
+                        </div>
+                        <span class="arrow"><img src="arrow-down.svg" alt=""></span>
+                    </div>
+                    <div class="header-button">
+                        <button class="resume-btn"><a href="../dashboard_learn/index.html">Resume Learning</a></button>
+                    </div>
+                </div>
+                <div class="program-body">
+
+                    <div class="module">
+                        <div class="module-body">
+                            <p class="module-title">Module 3</p>
+                            <p class="module-desc">
+                                <small class="desc-left">Lecture: Understanding Data types and workflows</small>
+                                <small>Score <strong>1000/5000</strong> • Videos <strong>10/50</strong> • Problems
+                                    <strong>10/50</strong></small>
+                        </div>
+                        </p>
+                        <div class="progress-box">
+                            <div class="percentage">35.7% Completed</div>
+                            <div class="progress-bar">
+
+                                <div class="progress" style="width: 35.7%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="header-title" onclick="toggleCard(this)">
+                    <div class="program-header">
+                        <img class="icon" src="Icon 2.svg" alt="">
+                        <div>
+
+                            Combo | Data Analytics and AI<br>
+                            <span class="desc">End Date: 8th June, 2025</span>
+                        </div>
+                        <span class="arrow"><img src="arrow-down.svg" alt=""></span>
+                    </div>
+                    <div class="header-button">
+                        <button class="resume-btn"><a href="../dashboard_learn/index.html">Resume Learning</a></button>
+                    </div>
+                </div>
+                <div class="program-body">
+
+                    <div class="module">
+                        <div class="module-body">
+                            <p class="module-title">Module 3</p>
+                            <p class="module-desc">
+                                <small class="desc-left">Lecture: Understanding Data types and workflows</small>
+                                <small>Score <strong>1000/5000</strong> • Videos <strong>10/50</strong> • Problems
+                                    <strong>10/50</strong></small>
+                        </div>
+                        </p>
+                        <div class="progress-box">
+                            <div class="percentage">35.7% Completed</div>
+                            <div class="progress-bar">
+
+                                <div class="progress" style="width: 35.7%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add another program card here -->
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="right">
+            <div class="excel-interview">
+                <div class="excel-icon">
+                    <img src="excel-icon.svg" alt="">
+                </div>
+                <div class="excel-text">
+                    <p>Excel your interview Prep with us</p>
+                    <span>Ace your interviews now <img src="arrow-circle.svg" alt=""></span>
+
+                </div>
+
+            </div>
+            <div class="streak-card">
+                <div class="streak" id="streakTrigger">
+                    <div><img src="fire-icon.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Your Streak</p>
+                        <span>0/7 days practiced this week</span>
+                    </div>
+
+                </div>
+
+                <div class="calendar">
+                    <p>April 21 - April 27</p>
+                    <div class="days">
+                        <span
+                            class="monday">M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-card">
+                <img src="people.svg" alt="">
+                <span class="exclusive">Exclusive</span>
+
+                <p>Every great journey starts with a right learning path. Join Our Community to get exclusive benefits!
+                </p>
+                <p>Join Our Community →</p>
+            </div>
+        </aside>
+    </main>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay">
+        <!-- Side Drawer -->
+        <div class="side-drawer" id="sideDrawer">
+            <!-- Progress Container -->
+
+            <div class="streak" id="streakTrigger">
+                <div><img src="fire-icon.svg" alt="">
+                </div>
+                <div>
+                    <p>Your Streak</p>
+                    <span>0/7 days practiced this week</span>
+                </div>
+
+
+
+
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-info">
+                    <h4>Your Overall Progress</h4>
+                    <p class="progress-percent">38% Completed</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 38%;"></div>
+
+                    </div>
+
+                    <div class="due-date">
+                        Due date is <strong>12th July, 2025, 11:59PM</strong>
+                    </div>
+                </div>
+
+            </div>
+            <div class="progress-icon">
+                <div class="icon-circle">
+                    <div class="calendar-wrapper">
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+                        <div class="calendar-row">
+                            <span class="week-label">April 21 - April 27</span>
+                            <div class="days">
+                                <span class="day practiced">M</span>
+                                <span class="day practiced">T</span>
+                                <span class="day practiced">W</span>
+                                <span class="day">T</span>
+                                <span class="day practiced">F</span>
+                                <span class="day">S</span>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
